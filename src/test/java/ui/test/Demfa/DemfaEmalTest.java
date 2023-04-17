@@ -5,7 +5,7 @@ import core.BaseTest;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ui.CatalogFactories.DemfaCompany.DemfaEmal;
-import ui.LoginAndNavigation.FdmLoginPage;
+import ui.mainPage.FdmLoginPage;
 
 public class DemfaEmalTest extends BaseTest {
 

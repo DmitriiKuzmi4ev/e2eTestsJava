@@ -5,7 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ui.CatalogFactories.KedrCompany.straightFacade.KedrPage;
-import ui.LoginAndNavigation.FdmLoginPage;
+import ui.mainPage.FdmLoginPage;
 
 public class KedrTests extends BaseTest {
     private KedrPage kedrPage;
