@@ -1,4 +1,4 @@
-package ui.test.standart;
+package ui.test.factories.standart;
 
 //public class StandartFacadePvhTest extends BaseTest {
 //    private StandartPage standartPage;

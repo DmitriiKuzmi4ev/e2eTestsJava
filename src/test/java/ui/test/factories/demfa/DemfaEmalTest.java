@@ -1,4 +1,4 @@
-package ui.test.demfa;
+package ui.test.factories.demfa;
 
 
 //public class DemfaEmalTest extends BaseTest {

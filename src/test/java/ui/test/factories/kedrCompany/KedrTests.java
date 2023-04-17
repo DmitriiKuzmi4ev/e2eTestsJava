@@ -1,4 +1,4 @@
-package ui.test.kedrCompany;
+package ui.test.factories.kedrCompany;
 
 //public class KedrTests extends BaseTest {
 //    private KedrPage kedrPage;

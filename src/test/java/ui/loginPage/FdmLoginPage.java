@@ -10,24 +10,18 @@ import static com.codeborne.selenide.Selenide.$x;
 public class FdmLoginPage {
     /**
      * Блок с константами для сценариев на главной странице (надо вынести в отдельный класс Constants)
-     * */
+     */
 
-    private static final String VALID_LAST_NAME = "Тестировщик";
-    private static final String VALID_NAME = "Тестировщик";
-    private static final String VALID_PATRONYMIC = "Тестировщик";
     private static final String VALID_NUM = "9950378814";
     private static final String VALID_CODE = "1111";
-    private static final String VALID_REGISTERED_EMAIL = "komradekuzmi4ev@gmail.com";
 
 
     private static final String INVALID_NUM = "3454685722";
     private static final String INVALID_CODE = "2345235";
-    private static final String INVALID_PATRONYMIC = ")$%/'lk";
-    private static final String INVALID_EMAIL = "aaaaagmail.com";
 
     /**
      * Блок с локаторами для сценариев авторизаци, навигации, формы обратной связи
-     * */
+     */
 
     private final SelenideElement applyCity = $x("//*[@id=\"closeSelectCityModal\"]");
     private final SelenideElement enter = $x("//nav[(@class=\"header__nav nav\")]//ancestor::a[(@data-link=\"/personal/login_modal\")]");
@@ -40,14 +34,6 @@ public class FdmLoginPage {
     private final SelenideElement phoneError = $x("//div[(@class=\"form-group\")]//ancestor::div[(@id=\"invalidFeedback\")]");
     private final SelenideElement logOut = $x("//header//ancestor::a[(@class=\"header__user-links\")]");
 
-    private final SelenideElement catalogBtn = $x("//header//ancestor::a[(@href=\"/main/factory/select-factory/\")]");
-    private final SelenideElement catalogCheck = $x("//div[(@class=\"container catalog-header\")]");
-    private final SelenideElement deliveryBtn = $x("//header//ancestor::a[(@href=\"/main/factory/select-factory/\")]");
-    private final SelenideElement deliveryCheck = $x("//div[(@class=\"container page-delivery-header\")]");
-    private final SelenideElement payBtn = $x("//header//ancestor::a[(@href=\"/main/factory/select-factory/\")]");
-    private final SelenideElement payCheck = $x("//div[(@class=\"container page-pay-header\")]");
-    private final SelenideElement returnBtn = $x("//header//ancestor::a[(@href=\"/main/factory/select-factory/\")]");
-    private final SelenideElement returnCheck = $x("//div[(@class=\"container page-refund-header\")]");
 
     /**
      * Блок с методами позитивных и негативных сценариев авторизации пользователя,
@@ -66,6 +52,7 @@ public class FdmLoginPage {
         enter.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
+
     /*Проверка - модальное окно входа появилось*/
     public FdmLoginPage checkedAuthModal() {
         authModal.shouldBe(Condition.visible, Duration.ofSeconds(30));
@@ -77,6 +64,7 @@ public class FdmLoginPage {
         phoneInput.shouldBe(Condition.editable).setValue(VALID_NUM);
         return this;
     }
+
     /*Кнопка ВОЙТИ*/
     public FdmLoginPage clickOnEntryBtn() {
         entryBtn.shouldBe(Condition.editable, Duration.ofSeconds(30)).click();
@@ -88,36 +76,43 @@ public class FdmLoginPage {
         codeInput.shouldBe(Condition.editable).setValue(VALID_CODE);
         return this;
     }
+
     /*Кнопка ВОЙТИ основная*/
     public FdmLoginPage clickOnEntryBtnPrimary() {
         entryBtnPrimary.shouldBe(Condition.editable).click();
         return this;
     }
+
     /*Проверка, что пользователь авторизовался*/
     public FdmLoginPage checkedLogOutBtn() {
         logOutBtn.shouldHave(Condition.exactText("Выход"));
         return this;
     }
+
     /*Ввод номера невалидного номер телефона*/
     public FdmLoginPage insertInvalidPhone() {
         phoneInput.shouldBe(Condition.editable).setValue(INVALID_NUM);
         return this;
     }
+
     /*Проверка, что введен номер не соответствующий формату*/
     public FdmLoginPage checkedInvalidPhoneError() {
         phoneError.shouldHave(Condition.exactText("Неверный формат номера телефона"));
         return this;
     }
+
     /*Ввод неверного кода авторизации*/
     public FdmLoginPage insertInvalidCode() {
         codeInput.shouldBe(Condition.editable).setValue(INVALID_CODE);
         return this;
     }
+
     /*Клик по кнопке выход*/
     public FdmLoginPage clickOnLogOutBtn() {
         logOutBtn.shouldBe(Condition.editable, Duration.ofSeconds(30)).click();
         return this;
     }
+
     /*Проверка, что пользователь вышел из личного кабинета*/
     public FdmLoginPage checkedLogOut() {
         logOut.shouldHave(Condition.exactText("Вход"));
