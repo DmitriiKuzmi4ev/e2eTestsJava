@@ -59,4 +59,60 @@ public class FdmNavigationTest extends BaseTest {
                 .clickOnEntryBtnPrimary()
                 .clickOnReturnBtn();
     }
+    @Test
+    @DisplayName("Тест - Навигация -  переход по баннеру 1 - выбрать производителя")
+    public void promo1Test() {
+        fdmNavigationPage.clickOnEnter()
+                .checkedAuthModal()
+                .insertValidPhone()
+                .clickOnEntryBtn()
+                .insertValidCode()
+                .clickOnEntryBtnPrimary()
+                .clickOnPromo1();
+    }
+    @Test
+    @DisplayName("Тест - Навигация -  переход по баннеру 2 - образцы в подарок")
+    public void promo2Test() {
+        fdmNavigationPage.clickOnEnter()
+                .checkedAuthModal()
+                .insertValidPhone()
+                .clickOnEntryBtn()
+                .insertValidCode()
+                .clickOnEntryBtnPrimary()
+                .clickOnPromo2();
+    }
+    @Test
+    @DisplayName("Тест - Навигация -  переход по баннеру 3 - текущая акция")
+    public void promo3Test() {
+        fdmNavigationPage.clickOnEnter()
+                .checkedAuthModal()
+                .insertValidPhone()
+                .clickOnEntryBtn()
+                .insertValidCode()
+                .clickOnEntryBtnPrimary()
+                .clickOnPromo3();
+    }
+    @Test
+    @DisplayName("Тест - Навигация - проверка отображения и работы свайпера на главной")
+    public void swiperTest() {
+        fdmNavigationPage.clickOnEnter()
+                .checkedAuthModal()
+                .insertValidPhone()
+                .clickOnEntryBtn()
+                .insertValidCode()
+                .clickOnEntryBtnPrimary()
+                .clickSwipeNext();
+    }
+    @Test
+    @DisplayName("Тест - Навигация - проверка битых ссылок в футтере сайта")
+    public void footerLinkTest() {
+        fdmNavigationPage.clickOnEnter()
+                .checkedAuthModal()
+                .insertValidPhone()
+                .clickOnEntryBtn()
+                .insertValidCode()
+                .clickOnEntryBtnPrimary()
+                .checkFooterLinks();
+    }
+
 }

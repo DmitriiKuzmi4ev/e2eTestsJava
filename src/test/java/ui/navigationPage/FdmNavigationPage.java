@@ -32,6 +32,19 @@ public class FdmNavigationPage {
     private final SelenideElement payBtn = $x("//header//ancestor::a[(@href=\"/main/factory/select-factory/\")]");
     private final SelenideElement returnBtn = $x("//header//ancestor::a[(@href=\"/main/factory/select-factory/\")]");
 
+    private final SelenideElement promo1 = $x("//a[(@class=\"item promo-1\")]");
+    private final SelenideElement promo2 = $x("//a[(@class=\"item promo-2\")]");
+    private final SelenideElement promo3 = $x("//a[(@href=\"/furnitura-na-3000r-v-podarok\")]");
+
+    private final SelenideElement swiper = $x("//div[(@class=\"swiper-navigation swiper-button-next\")]");
+
+    private final SelenideElement personalPoliticDataHref = $x("//div[(@class=\"footer__politic\")]//ancestor::a[(@href=\"/docs/personal.pdf?v3\")]");
+    private final SelenideElement privacyPoliticHref = $x("//div[(@class=\"footer__politic\")]//ancestor::a[(@href=\"/docs/privacy.pdf?v3\")]");
+    private final SelenideElement legalEntityHref = $x("//div[(@class=\"footer__politic\")]//ancestor::a[(@href=\"/docs/offer_legal_entity.pdf\")]");
+    private final SelenideElement offerHref = $x("//div[(@class=\"footer__politic\")]//ancestor::a[(@href=\"/offer.pdf\")]");
+    private final SelenideElement paymentsHref = $x("//div[(@class=\"footer__politic\")]//ancestor::a[(@href=\"/kontakty\")]");
+    private final SelenideElement aboutHref = $x("//div[(@class=\"footer__politic\")]//ancestor::a[(@href=\"/o-nas\")]");
+
     /**
      * Блок с методами позитивных и негативных сценариев навигации
      */
@@ -62,7 +75,7 @@ public class FdmNavigationPage {
 
     /*Кнопка ВОЙТИ*/
     public FdmNavigationPage clickOnEntryBtn() {
-        entryBtn.shouldBe(Condition.editable, Duration.ofSeconds(30)).click();
+        entryBtn.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
 
@@ -74,31 +87,72 @@ public class FdmNavigationPage {
 
     /*Кнопка ВОЙТИ основная*/
     public FdmNavigationPage clickOnEntryBtnPrimary() {
-        entryBtnPrimary.shouldBe(Condition.editable).click();
+        entryBtnPrimary.shouldBe(Condition.enabled).click();
         return this;
     }
 
     /*Клик по кнопке Каталог*/
     public FdmNavigationPage clickOnCatalogBtn() {
-        catalogBtn.shouldBe(Condition.editable, Duration.ofSeconds(30)).click();
+        catalogBtn.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
 
     /*Клик по кнопке Доставка*/
     public FdmNavigationPage clickOnDeliveryBtn() {
-        deliveryBtn.shouldBe(Condition.editable, Duration.ofSeconds(30)).click();
+        deliveryBtn.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
 
     /*Клик по кнопке Оплата*/
     public FdmNavigationPage clickOnPayBtn() {
-        payBtn.shouldBe(Condition.editable, Duration.ofSeconds(30)).click();
+        payBtn.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
 
     /*Клик по кнопке Возврат*/
     public FdmNavigationPage clickOnReturnBtn() {
-        returnBtn.shouldBe(Condition.editable, Duration.ofSeconds(30)).click();
+        returnBtn.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
+    /*Клик по баннеру 1*/
+    public FdmNavigationPage clickOnPromo1() {
+        promo1.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
+        return this;
+    }
+    /*Клик по баннеру 2*/
+    public FdmNavigationPage clickOnPromo2() {
+        promo2.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
+        return this;
+    }
+    /*Клик по баннеру 3*/
+    public FdmNavigationPage clickOnPromo3() {
+        promo3.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
+        return this;
+    }
+    /*Переход к свайперу*/
+    public FdmNavigationPage clickSwipeNext() {
+        swiper.should();
+        swiper.shouldBe(Condition.enabled, Duration.ofSeconds(30));
+        return this;
+    }
+    /*Переход ссылкам в футере*/
+    public FdmNavigationPage checkFooterLinks() {
+        personalPoliticDataHref.should();
+        personalPoliticDataHref.shouldBe(Condition.enabled, Duration.ofSeconds(30));
+        privacyPoliticHref.shouldBe(Condition.enabled, Duration.ofSeconds(30));
+        legalEntityHref.shouldBe(Condition.enabled, Duration.ofSeconds(30));
+        offerHref.shouldBe(Condition.enabled, Duration.ofSeconds(30));
+        paymentsHref.shouldBe(Condition.enabled, Duration.ofSeconds(30));
+        aboutHref.shouldBe(Condition.enabled, Duration.ofSeconds(30));
+        return this;
+    }
+
+
+
+
+
+
+
+
+
 }
