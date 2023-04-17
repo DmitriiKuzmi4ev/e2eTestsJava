@@ -31,7 +31,6 @@ def uiTest = tasks.register("uiTests", Test) {
         includeTags "Smoke"
     }
 }
-
 test {
     useJUnitPlatform()
 }
