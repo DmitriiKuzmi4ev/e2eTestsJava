@@ -10,12 +10,12 @@ stages:
   - allure
 
 
-TESTS:
+SMOKE TESTS:
   stage: tests
   allow_failure: true
   script:
     - echo "Запуск тестов"
-    - gradle test
+    - gradle clean test -Dtags=Smoke
   artifacts:
     when: always
     paths:
@@ -26,7 +26,7 @@ ALLURE:
   stage: allure
   script:
     - gradle allureServe
-    - echo "Allure report is here - "
+    - echo "Allure report is here - http://192.168.108.30:53266/"
   artifacts:
     when: always
     paths:
