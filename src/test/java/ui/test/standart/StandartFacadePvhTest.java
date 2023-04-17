@@ -1,12 +1,5 @@
 package ui.test.standart;
 
-import core.BaseTest;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
-import ui.CatalogFactories.StandartCompany.StandartPage;
-import ui.mainPage.FdmLoginPage;
-
 //public class StandartFacadePvhTest extends BaseTest {
 //    private StandartPage standartPage;
 //    @BeforeEach

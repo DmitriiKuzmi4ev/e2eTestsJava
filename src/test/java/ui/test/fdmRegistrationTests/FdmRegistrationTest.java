@@ -9,7 +9,6 @@ import ui.registration.FdmRegistrationPage;
 
 @Tag("Smoke")
 public class FdmRegistrationTest extends BaseTest {
-
     private FdmRegistrationPage fdmRegistrationPage;
     @BeforeEach
     public void setUp(){

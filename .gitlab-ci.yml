@@ -3,16 +3,28 @@ default:
   tags:
     - shelllocal
 
+
 stages:
-  - test
-smoke tests with Allure:
-  stage: test
+  - ui
+  - allure
+
+
+UI tests:
+  stage: ui
+  allow_failure: true
   script:
     - ./gradlew test
-  after_script:
+  artifacts:
+    when: always
+    paths:
+     - build/allure-results*
+
+
+Allure report:
+  stage: allure
+  script:
     - ./gradlew allureServe
   artifacts:
     when: always
     paths:
-     - build/reports/allure-report/allureReport/*
-
+      - build/reports/allure-report/allureReport/*

@@ -1,18 +1,18 @@
-package ui.test.fdmMainPageTests;
+package ui.test.fdmLoginPageTests;
 
 import core.BaseTest;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import ui.mainPage.FdmMainPage;
+import ui.loginPage.FdmLoginPage;
 
 @Tag("Smoke")
-public class FdmMainPageTest extends BaseTest {
-    private FdmMainPage fdmMainPage;
+public class FdmLoginPageTest extends BaseTest {
+    private FdmLoginPage fdmMainPage;
     @BeforeEach
     public void setUp(){
-        fdmMainPage = new FdmMainPage(); //инициализация главной страницы
+        fdmMainPage = new FdmLoginPage(); //инициализация главной страницы
         fdmMainPage.clickOnApplyCity();
     }
 
@@ -58,50 +58,5 @@ public class FdmMainPageTest extends BaseTest {
                 .clickOnLogOutBtn()
                 .checkedLogOut();
     }
-    @Test
-    @DisplayName("Тест - Навигация -  переход по кнопке - Каталог")
-    public void catalogBtnTest() {
-        fdmMainPage.clickOnEnter()
-                .checkedAuthModal()
-                .insertValidPhone()
-                .clickOnEntryBtn()
-                .insertValidCode()
-                .clickOnEntryBtnPrimary()
-                .clickOnCatalogBtn();
-    }
-    @Test
-    @DisplayName("Тест - Навигация -  переход по кнопке - Доставка")
-    public void deliveryBtnTest() {
-        fdmMainPage.clickOnEnter()
-                .checkedAuthModal()
-                .insertValidPhone()
-                .clickOnEntryBtn()
-                .insertValidCode()
-                .clickOnEntryBtnPrimary()
-                .clickOnDeliveryBtn();
-    }
-    @Test
-    @DisplayName("Тест - Навигация -  переход по кнопке - Оплата")
-    public void payBtnTest() {
-        fdmMainPage.clickOnEnter()
-                .checkedAuthModal()
-                .insertValidPhone()
-                .clickOnEntryBtn()
-                .insertValidCode()
-                .clickOnEntryBtnPrimary()
-                .clickOnPayBtn();
-    }
-    @Test
-    @DisplayName("Тест - Навигация -  переход по кнопке - Возврат")
-    public void returnBtnTest() {
-        fdmMainPage.clickOnEnter()
-                .checkedAuthModal()
-                .insertValidPhone()
-                .clickOnEntryBtn()
-                .insertValidCode()
-                .clickOnEntryBtnPrimary()
-                .clickOnReturnBtn();
-    }
-
 
 }

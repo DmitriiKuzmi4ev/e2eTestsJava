@@ -1,15 +1,13 @@
-package ui.mainPage;
+package ui.loginPage;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
-import ui.registration.FdmRegistrationPage;
 
 import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.$x;
 
-public class FdmMainPage {
+public class FdmLoginPage {
     /**
      * Блок с константами для сценариев на главной странице (надо вынести в отдельный класс Constants)
      * */
@@ -58,94 +56,73 @@ public class FdmMainPage {
 
 
     /*Подтверждение города*/
-    public FdmMainPage clickOnApplyCity() {
+    public FdmLoginPage clickOnApplyCity() {
         applyCity.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
 
     /*Кнопка Вход*/
-    public FdmMainPage clickOnEnter() {
+    public FdmLoginPage clickOnEnter() {
         enter.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
     /*Проверка - модальное окно входа появилось*/
-    public FdmMainPage checkedAuthModal() {
+    public FdmLoginPage checkedAuthModal() {
         authModal.shouldBe(Condition.visible, Duration.ofSeconds(30));
         return this;
     }
 
     /*Ввод номера валидного номер телефона*/
-    public FdmMainPage insertValidPhone() {
+    public FdmLoginPage insertValidPhone() {
         phoneInput.shouldBe(Condition.editable).setValue(VALID_NUM);
         return this;
     }
     /*Кнопка ВОЙТИ*/
-    public FdmMainPage clickOnEntryBtn() {
+    public FdmLoginPage clickOnEntryBtn() {
         entryBtn.shouldBe(Condition.editable, Duration.ofSeconds(30)).click();
         return this;
     }
 
     /*Ввод валидного когда авторизации*/
-    public FdmMainPage insertValidCode() {
+    public FdmLoginPage insertValidCode() {
         codeInput.shouldBe(Condition.editable).setValue(VALID_CODE);
         return this;
     }
     /*Кнопка ВОЙТИ основная*/
-    public FdmMainPage clickOnEntryBtnPrimary() {
+    public FdmLoginPage clickOnEntryBtnPrimary() {
         entryBtnPrimary.shouldBe(Condition.editable).click();
         return this;
     }
     /*Проверка, что пользователь авторизовался*/
-    public FdmMainPage checkedLogOutBtn() {
+    public FdmLoginPage checkedLogOutBtn() {
         logOutBtn.shouldHave(Condition.exactText("Выход"));
         return this;
     }
     /*Ввод номера невалидного номер телефона*/
-    public FdmMainPage insertInvalidPhone() {
+    public FdmLoginPage insertInvalidPhone() {
         phoneInput.shouldBe(Condition.editable).setValue(INVALID_NUM);
         return this;
     }
     /*Проверка, что введен номер не соответствующий формату*/
-    public FdmMainPage checkedInvalidPhoneError() {
+    public FdmLoginPage checkedInvalidPhoneError() {
         phoneError.shouldHave(Condition.exactText("Неверный формат номера телефона"));
         return this;
     }
     /*Ввод неверного кода авторизации*/
-    public FdmMainPage insertInvalidCode() {
+    public FdmLoginPage insertInvalidCode() {
         codeInput.shouldBe(Condition.editable).setValue(INVALID_CODE);
         return this;
     }
     /*Клик по кнопке выход*/
-    public FdmMainPage clickOnLogOutBtn() {
+    public FdmLoginPage clickOnLogOutBtn() {
         logOutBtn.shouldBe(Condition.editable, Duration.ofSeconds(30)).click();
         return this;
     }
     /*Проверка, что пользователь вышел из личного кабинета*/
-    public FdmMainPage checkedLogOut() {
+    public FdmLoginPage checkedLogOut() {
         logOut.shouldHave(Condition.exactText("Вход"));
         return this;
     }
-    /*Клик по кнопке Каталог*/
-    public FdmMainPage clickOnCatalogBtn() {
-        catalogBtn.shouldBe(Condition.editable, Duration.ofSeconds(30)).click();
-        return this;
-    }
-    /*Клик по кнопке Доставка*/
-    public FdmMainPage clickOnDeliveryBtn() {
-        deliveryBtn.shouldBe(Condition.editable, Duration.ofSeconds(30)).click();
-        return this;
-    }
-    /*Клик по кнопке Оплата*/
-    public FdmMainPage clickOnPayBtn() {
-        payBtn.shouldBe(Condition.editable, Duration.ofSeconds(30)).click();
-        return this;
-    }
-    /*Клик по кнопке Возврат*/
-    public FdmMainPage clickOnReturnBtn() {
-        returnBtn.shouldBe(Condition.editable, Duration.ofSeconds(30)).click();
-        return this;
-    }
-
 
 
 //    /*Отчество*/

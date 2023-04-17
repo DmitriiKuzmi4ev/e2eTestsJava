@@ -1,12 +1,6 @@
 package ui.test.demfa;
 
 
-import core.BaseTest;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
-import ui.CatalogFactories.DemfaCompany.DemfaEmal;
-import ui.mainPage.FdmLoginPage;
-
 //public class DemfaEmalTest extends BaseTest {
 //
 //    @Test
