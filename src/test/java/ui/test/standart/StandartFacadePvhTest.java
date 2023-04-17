@@ -1,4 +1,4 @@
-package ui.test.Standart;
+package ui.test.standart;
 
 import core.BaseTest;
 import org.junit.jupiter.api.BeforeEach;

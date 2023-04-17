@@ -1,4 +1,4 @@
-package ui.test.KedrCompany;
+package ui.test.kedrCompany;
 
 import core.BaseTest;
 import org.junit.jupiter.api.BeforeEach;

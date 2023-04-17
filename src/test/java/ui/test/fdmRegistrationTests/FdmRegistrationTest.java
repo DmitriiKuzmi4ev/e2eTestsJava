@@ -1,4 +1,4 @@
-package ui.test.RegLogNavFormTests;
+package ui.test.fdmRegistrationTests;
 
 import core.BaseTest;
 import org.junit.jupiter.api.BeforeEach;
@@ -93,55 +93,5 @@ public class FdmRegistrationTest extends BaseTest {
                 .checkedInvalidNameError()
                 .checkedInvalidPatronymicError();
     }
-//
-//    @Test
-//    @DisplayName("Тест - Регистрация -  ввод спец.символов и цифр в строоковые поля")
-//    public void registrationSpecialSymbolTest() {
-//        fdmRegistrationPage.openCatalog()
-//                .openStandartFabric()
-//                .openFacadePvh()
-//                .setStraightFacade() //выбор Фасады прямые
-//                .setRandomDecor()
-//                .continue1Click();
-//
-//        fdmRegistrationPage.setRandomEdge();
-//        fdmRegistrationPage.continue2Click();
-//        fdmRegistrationPage.setHeight();
-//        fdmRegistrationPage.setWidth();
-//
-//        fdmRegistrationPage.calculateClick();
-//        fdmRegistrationPage.addToBasketClick();
-//        fdmRegistrationPage.goToBasketClick();
-//        fdmRegistrationPage.goToCheckOutClick();
-//        fdmRegistrationPage.qrCodeClick();
-//        fdmRegistrationPage.deliveryCityClick();
-//        fdmRegistrationPage.checkedPaymentBtn();
-//    }
-//
-
-//
-//    @Test
-//    @DisplayName("Тест - Регистрация -  ввод электронной почты без символа -@-")
-//    public void registrationMailFieldTest() {
-//        fdmRegistrationPage.openCatalog()
-//                .openStandartFabric()
-//                .openFacadePvh()
-//                .setStraightFacade() //выбор Фасады прямые
-//                .setRandomDecor()
-//                .continue1Click();
-//
-//        fdmRegistrationPage.setRandomEdge();
-//        fdmRegistrationPage.continue2Click();
-//        fdmRegistrationPage.setHeight();
-//        fdmRegistrationPage.setWidth();
-//
-//        fdmRegistrationPage.calculateClick();
-//        fdmRegistrationPage.addToBasketClick();
-//        fdmRegistrationPage.goToBasketClick();
-//        fdmRegistrationPage.goToCheckOutClick();
-//        fdmRegistrationPage.qrCodeClick();
-//        fdmRegistrationPage.deliveryCityClick();
-//        fdmRegistrationPage.checkedPaymentBtn();
-//    }
 
 }

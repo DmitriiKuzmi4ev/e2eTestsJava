@@ -1,4 +1,4 @@
-package ui.test.Demfa;
+package ui.test.demfa;
 
 
 import core.BaseTest;
