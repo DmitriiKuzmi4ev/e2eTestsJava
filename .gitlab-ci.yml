@@ -6,25 +6,27 @@ default:
 
 
 stages:
-  - ui
+  - tests
   - allure
 
 
-UI tests:
-  stage: ui
+TESTS:
+  stage: tests
   allow_failure: true
   script:
-    - ./gradlew test
+    - echo "Запуск тестов"
+    - gradle test
   artifacts:
     when: always
     paths:
-     - build/allure-results*
+     - build/allure-results
 
 
-Allure report:
+ALLURE:
   stage: allure
   script:
-    - ./gradlew allureServe
+    - gradle allureServe
+    - echo "Allure report is here - "
   artifacts:
     when: always
     paths:
