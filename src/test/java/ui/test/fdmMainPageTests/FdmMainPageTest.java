@@ -61,7 +61,54 @@ public class FdmMainPageTest extends BaseTest {
                 .clickOnLogOutBtn()
                 .checkedLogOut();
     }
-
+    @Test
+    @Tag("Smoke")
+    @DisplayName("Тест - Навигация -  переход по кнопке - Каталог")
+    public void catalogBtnTest() {
+        fdmMainPage.clickOnEnter()
+                .checkedAuthModal()
+                .insertValidPhone()
+                .clickOnEntryBtn()
+                .insertValidCode()
+                .clickOnEntryBtnPrimary()
+                .clickOnCatalogBtn();
+    }
+    @Test
+    @Tag("Smoke")
+    @DisplayName("Тест - Навигация -  переход по кнопке - Доставка")
+    public void deliveryBtnTest() {
+        fdmMainPage.clickOnEnter()
+                .checkedAuthModal()
+                .insertValidPhone()
+                .clickOnEntryBtn()
+                .insertValidCode()
+                .clickOnEntryBtnPrimary()
+                .clickOnDeliveryBtn();
+    }
+    @Test
+    @Tag("Smoke")
+    @DisplayName("Тест - Навигация -  переход по кнопке - Оплата")
+    public void payBtnTest() {
+        fdmMainPage.clickOnEnter()
+                .checkedAuthModal()
+                .insertValidPhone()
+                .clickOnEntryBtn()
+                .insertValidCode()
+                .clickOnEntryBtnPrimary()
+                .clickOnPayBtn();
+    }
+    @Test
+    @Tag("Smoke")
+    @DisplayName("Тест - Навигация -  переход по кнопке - Возврат")
+    public void returnBtnTest() {
+        fdmMainPage.clickOnEnter()
+                .checkedAuthModal()
+                .insertValidPhone()
+                .clickOnEntryBtn()
+                .insertValidCode()
+                .clickOnEntryBtnPrimary()
+                .clickOnReturnBtn();
+    }
 
 
 }

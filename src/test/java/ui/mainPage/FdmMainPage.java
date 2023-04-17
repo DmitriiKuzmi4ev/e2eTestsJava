@@ -32,7 +32,7 @@ public class FdmMainPage {
      * */
 
     private final SelenideElement applyCity = $x("//*[@id=\"closeSelectCityModal\"]");
-    private final SelenideElement enter = $x("//div[(@class=\"g-icon-text\")]//ancestor::a[(@href=\"#\")]");
+    private final SelenideElement enter = $x("//a[(@data-link=\"/personal/login_modal\")]");
     private final SelenideElement authModal = $x("//div[(@id=\"auth-modal\")]//ancestor::div[(@class=\"modal-body form-container\")]");
     private final SelenideElement phoneInput = $x("//input[(@id=\"phoneInput\")]");
     private final SelenideElement entryBtn = $x("//div[(@class=\"col center\")]//ancestor::button[(@type=\"submit\")]");
@@ -42,27 +42,14 @@ public class FdmMainPage {
     private final SelenideElement phoneError = $x("//div[(@class=\"form-group\")]//ancestor::div[(@id=\"invalidFeedback\")]");
     private final SelenideElement logOut = $x("//header//ancestor::a[(@class=\"header__user-links\")]");
 
-    private final SelenideElement agreeTerms = $x("//input[(@id=\"user_profile_agreeTerms\")]");
-    private final SelenideElement agreeTermsCheckbox = $x("//input[(@id=\"user_profile_agreeTerms\")]");
-    private final SelenideElement agreeTermsPolitics = $x("//input[(@id=\"user_profile_agreeTermsPolitic\")]");
-    private final SelenideElement agreeTermsPoliticsCheckbox = $x("//input[(@id=\"user_profile_agreeTermsPolitic\")]");
-    private final SelenideElement registrarionBtn = $x("//form[(@name=\"user_profile\")]//ancestor::button[contains(@class, \"btn g-btn g-btn--orange\")]");
-    private final SelenideElement agreeTermsHref = $x("//a[(@href=\"/docs/agreement.pdf?v3\")]");
-    private final SelenideElement agreeTermsPoliticsHref = $x("//a[(@href=\"/docs/privacy.pdf?v3\")]");
-
-    private final SelenideElement errorLastName = $x("//div[(@class=\"error-field\")]//ancestor::span[text() = \"Заполните поле Фамилия\"]");
-    private final SelenideElement errorInvalidLastName = $x("//div[(@class=\"error-field\")]//ancestor::span[text() = \"Использованы недопустимые символы\"]");
-    private final SelenideElement errorName = $x("//div[(@class=\"error-field\")]//ancestor::span[text() = \"Заполните поле Имя\"]");
-    private final SelenideElement errorInvalidName = $x("//div[(@class=\"error-field\")]//ancestor::span[text() = \"Использованы недопустимые символы\"]");
-    private final SelenideElement errorPatronymic = $x("//div[(@class=\"error-field\")]//ancestor::span[text() = \"Заполните поле Отчество\"]");
-    private final SelenideElement errorInvalidPatronymic = $x("//div[(@class=\"error-field\")]//ancestor::span[text() = \"Использованы недопустимые символы\"]");
-    private final SelenideElement errorNumber = $x("//div[(@class=\"error-field\")]//ancestor::span[text() = \"Телефон введен некорректно\"]");
-    private final SelenideElement errorRegisteredNumber = $x("//div[(@class=\"error-field\")]//ancestor::span[text() = \"Указанный телефон уже занят\"]");
-    private final SelenideElement errorEmail = $x("//div[(@class=\"error-field\")]//ancestor::span[text() = \"Заполните поле Email\"]");
-
-    private final SelenideElement errorRegisteredEmail = $x("//div[(@class=\"error-field\")]//ancestor::span[text() = \"Указанный email уже занят\"]");
-    private final SelenideElement errorAgreeTerms = $x("//span[text() = \"Для продолжения Вам необходимо согласиться с условиями пользовательского соглашения\"]");
-    private final SelenideElement errorAgreeTermsPolitics = $x("//span[text() = \"Для продолжения Вам необходимо согласиться с условиями политики конфиденциальности\"]");
+    private final SelenideElement catalogBtn = $x("//header//ancestor::a[(@href=\"/main/factory/select-factory/\")]");
+    private final SelenideElement catalogCheck = $x("//div[(@class=\"container catalog-header\")]");
+    private final SelenideElement deliveryBtn = $x("//header//ancestor::a[(@href=\"/main/factory/select-factory/\")]");
+    private final SelenideElement deliveryCheck = $x("//div[(@class=\"container page-delivery-header\")]");
+    private final SelenideElement payBtn = $x("//header//ancestor::a[(@href=\"/main/factory/select-factory/\")]");
+    private final SelenideElement payCheck = $x("//div[(@class=\"container page-pay-header\")]");
+    private final SelenideElement returnBtn = $x("//header//ancestor::a[(@href=\"/main/factory/select-factory/\")]");
+    private final SelenideElement returnCheck = $x("//div[(@class=\"container page-refund-header\")]");
 
     /**
      * Блок с методами позитивных и негативных сценариев авторизации пользователя,
@@ -135,9 +122,31 @@ public class FdmMainPage {
     }
     /*Проверка, что пользователь вышел из личного кабинета*/
     public FdmMainPage checkedLogOut() {
-        logOut.shouldHave(Condition.exactText("Выход"));
+        logOut.shouldHave(Condition.exactText("Вход"));
         return this;
     }
+    /*Клик по кнопке Каталог*/
+    public FdmMainPage clickOnCatalogBtn() {
+        catalogBtn.shouldBe(Condition.editable, Duration.ofSeconds(30)).click();
+        return this;
+    }
+    /*Клик по кнопке Доставка*/
+    public FdmMainPage clickOnDeliveryBtn() {
+        deliveryBtn.shouldBe(Condition.editable, Duration.ofSeconds(30)).click();
+        return this;
+    }
+    /*Клик по кнопке Оплата*/
+    public FdmMainPage clickOnPayBtn() {
+        payBtn.shouldBe(Condition.editable, Duration.ofSeconds(30)).click();
+        return this;
+    }
+    /*Клик по кнопке Возврат*/
+    public FdmMainPage clickOnReturnBtn() {
+        returnBtn.shouldBe(Condition.editable, Duration.ofSeconds(30)).click();
+        return this;
+    }
+
+
 
 //    /*Отчество*/
 //    public FdmMainPage insertPatronymic() {

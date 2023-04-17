@@ -94,4 +94,5 @@ public class FdmRegistrationTest extends BaseTest {
                 .checkedInvalidPatronymicError();
     }
 
+
 }
