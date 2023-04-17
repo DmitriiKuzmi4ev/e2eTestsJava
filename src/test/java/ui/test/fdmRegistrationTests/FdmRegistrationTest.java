@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ui.registration.FdmRegistrationPage;
 
+@Tag("Smoke")
 public class FdmRegistrationTest extends BaseTest {
 
     private FdmRegistrationPage fdmRegistrationPage;
@@ -17,7 +18,6 @@ public class FdmRegistrationTest extends BaseTest {
     }
 
     @Test
-    @Tag("Smoke")
     @DisplayName("Тест - Регистрация -  ввод валидных значений, заполнение всех полей")
     public void registrationPositiveTest() {
         fdmRegistrationPage.openRegistration()
@@ -35,7 +35,6 @@ public class FdmRegistrationTest extends BaseTest {
     }
 
     @Test
-    @Tag("Smoke")
     @DisplayName("Тест - Регистрация -  проверка ссылок на документы соглашений")
     public void registrationLinksTest() {
         fdmRegistrationPage.openRegistration()
@@ -44,7 +43,6 @@ public class FdmRegistrationTest extends BaseTest {
     }
 
     @Test
-    @Tag("Smoke")
     @DisplayName("Тест - Регистрация -  пропуск обязательных полей")
     public void registrationVoidFieldTest() {
         fdmRegistrationPage.openRegistration()
@@ -60,7 +58,6 @@ public class FdmRegistrationTest extends BaseTest {
     }
 
     @Test
-    @Tag("Smoke")
     @DisplayName("Тест - Регистрация -  Ввод уже зарегестрированного номера телефона")
     public void registrationTryRegisteredNumberTest() {
         fdmRegistrationPage.openRegistration()
@@ -70,7 +67,6 @@ public class FdmRegistrationTest extends BaseTest {
     }
 
     @Test
-    @Tag("Smoke")
     @DisplayName("Тест - Регистрация -  Ввод уже зарегестрированной электронной почты")
     public void registrationTryRegisteredEmailTest() {
         fdmRegistrationPage.openRegistration()
@@ -81,7 +77,6 @@ public class FdmRegistrationTest extends BaseTest {
 
 
     @Test
-    @Tag("Smoke")
     @DisplayName("Тест - Регистрация -  ввод не валидных значений")
     public void registrationInvalidValueTest() {
         fdmRegistrationPage.openRegistration()

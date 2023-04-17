@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ui.mainPage.FdmMainPage;
 
+@Tag("Smoke")
 public class FdmMainPageTest extends BaseTest {
     private FdmMainPage fdmMainPage;
     @BeforeEach
@@ -16,7 +17,6 @@ public class FdmMainPageTest extends BaseTest {
     }
 
     @Test
-    @Tag("Smoke")
     @DisplayName("Тест - Авторизация -  ввод валидного номера телефона и кода авторизации")
     public void authorizationPositiveTest() {
         fdmMainPage.clickOnEnter()
@@ -28,7 +28,6 @@ public class FdmMainPageTest extends BaseTest {
                 .checkedLogOutBtn();
     }
     @Test
-    @Tag("Smoke")
     @DisplayName("Тест - Авторизация -  ввод невалидного номера телефона и кода авторизации")
     public void authorizationInvalidPhoneTest() {
         fdmMainPage.clickOnEnter()
@@ -37,7 +36,6 @@ public class FdmMainPageTest extends BaseTest {
                 .checkedInvalidPhoneError();
     }
     @Test
-    @Tag("Smoke")
     @DisplayName("Тест - Авторизация -  ввод неверного кода авторизации")
     public void authorizationInvalidCodeTest() {
         fdmMainPage.clickOnEnter()
@@ -48,7 +46,6 @@ public class FdmMainPageTest extends BaseTest {
                 .clickOnEntryBtnPrimary();
     }
     @Test
-    @Tag("Smoke")
     @DisplayName("Тест - Авторизация -  выход из личного кабинета пользователя")
     public void logOutTest() {
         fdmMainPage.clickOnEnter()
@@ -62,7 +59,6 @@ public class FdmMainPageTest extends BaseTest {
                 .checkedLogOut();
     }
     @Test
-    @Tag("Smoke")
     @DisplayName("Тест - Навигация -  переход по кнопке - Каталог")
     public void catalogBtnTest() {
         fdmMainPage.clickOnEnter()
@@ -74,7 +70,6 @@ public class FdmMainPageTest extends BaseTest {
                 .clickOnCatalogBtn();
     }
     @Test
-    @Tag("Smoke")
     @DisplayName("Тест - Навигация -  переход по кнопке - Доставка")
     public void deliveryBtnTest() {
         fdmMainPage.clickOnEnter()
@@ -86,7 +81,6 @@ public class FdmMainPageTest extends BaseTest {
                 .clickOnDeliveryBtn();
     }
     @Test
-    @Tag("Smoke")
     @DisplayName("Тест - Навигация -  переход по кнопке - Оплата")
     public void payBtnTest() {
         fdmMainPage.clickOnEnter()
@@ -98,7 +92,6 @@ public class FdmMainPageTest extends BaseTest {
                 .clickOnPayBtn();
     }
     @Test
-    @Tag("Smoke")
     @DisplayName("Тест - Навигация -  переход по кнопке - Возврат")
     public void returnBtnTest() {
         fdmMainPage.clickOnEnter()

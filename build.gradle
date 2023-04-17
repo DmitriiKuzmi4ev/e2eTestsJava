@@ -26,6 +26,12 @@ dependencies {
 
 }
 
+def uiTest = tasks.register("uiTests", Test) {
+    useJUnitPlatform {
+        includeTags "Smoke"
+    }
+}
+
 test {
     useJUnitPlatform()
 }

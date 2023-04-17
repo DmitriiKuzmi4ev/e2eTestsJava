@@ -9,8 +9,10 @@ smoke tests with Allure:
   stage: test
   script:
     - ./gradlew test
+  after_script:
     - ./gradlew allureServe
   artifacts:
+    when: always
     paths:
      - build/reports/allure-report/allureReport/*
 
