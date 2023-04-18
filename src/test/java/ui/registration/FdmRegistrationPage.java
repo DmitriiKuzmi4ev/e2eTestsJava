@@ -3,6 +3,7 @@ package ui.registration;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 
 import java.time.Duration;
 
@@ -68,137 +69,136 @@ public class FdmRegistrationPage {
      */
 
 
-    /*Подтверждение города*/
+    @Step("Подтверждаю, что город выбран верно")
     public FdmRegistrationPage clickOnApplyCity() {
         applyCity.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
 
-    /*Кнопка Регистрация*/
+    @Step("Кликаю по кнопке - Регистрация")
     public FdmRegistrationPage openRegistration() {
         registration.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
 
-    /*Фамилия*/
+    @Step("Ввожу фамилию в поле ввода")
     public FdmRegistrationPage insertLastName() {
         lastname.shouldBe(Condition.editable).setValue(VALID_LAST_NAME);
         return this;
     }
 
-    /*Имя*/
+    @Step("Ввожу имя в поле ввода")
     public FdmRegistrationPage insertName() {
         name.shouldBe(Condition.editable, Duration.ofSeconds(30)).setValue(VALID_NAME);
         return this;
     }
 
-    /*Отчество*/
+    @Step("Ввожу отчество в поле ввода")
     public FdmRegistrationPage insertPatronymic() {
         patronymic.shouldBe(Condition.editable).setValue(VALID_PATRONYMIC);
         return this;
     }
 
-    /*Номер телефона*/
+    @Step("Ввожу номер валидный номер телефона")
     public FdmRegistrationPage insertNumber() {
         userphone.shouldBe(Condition.editable).setValue(VALID_NUM);
         return this;
     }
 
-    /*Почта*/
+    @Step("Ввожу корректный адрес электронной почты")
     public FdmRegistrationPage insertEmail() {
         email.shouldBe(Condition.editable).setValue(VALID_EMAIL);
         return this;
     }
-
-    /*Промокод*/
+    @Step("Проверяю, что поле ввода промокода - доступно")
     public FdmRegistrationPage checkedPromocodeField() {
         promocode.shouldBe(Condition.editable);
         return this;
     }
 
-    /*Условия пользовательского соглашения*/
+    @Step("Принимаю пользовательское соглашение")
     public FdmRegistrationPage clickOnAgreeTerms() {
         agreeTerms.shouldBe(Condition.enabled).click();
         return this;
     }
 
-    /*Проверка чекбокса Условия пользовательского соглашения*/
+    @Step("Проверяю, что чекбокс Условий пользовательского соглашения - проставлен")
     public FdmRegistrationPage checkedAgreeTermsCheckbox() {
         agreeTermsCheckbox.shouldBe(Condition.selected);
         return this;
     }
 
-    /*Условия политики конфеденциальности и обработки персональных данных*/
+    @Step("Принимаю условия политики конфеденциальности и обработки персональных данных")
     public FdmRegistrationPage clickOnAgreeTermsPolitics() {
         agreeTermsPolitics.scrollTo();
         agreeTermsPolitics.shouldBe(Condition.enabled).click();
         return this;
     }
 
-    /*Проверка чекбокса Условия политики конфедециальных данных*/
+    @Step("Проверяю, что чекбокс условий политики конфеденциальности и обработки персональных данных - проставлен")
     public FdmRegistrationPage checkedAgreeTermsPoliticsCheckbox() {
         agreeTermsPoliticsCheckbox.shouldBe(Condition.selected);
         return this;
     }
 
-    /*Кнопка регистрации*/
+    @Step("Проверяю, что кнопка Зарегестрироваться - активна")
     public FdmRegistrationPage checkedRegistrationBtn() {
         registrarionBtn.shouldBe(Condition.enabled);
         return this;
     }
 
-    /*Проверка ссылки в элементе - Условия пользовательского соглашения*/
+    @Step("Проверяю ссылку в элементе - Условия пользовательского соглашения")
     public FdmRegistrationPage checkedLinkOnAgreeTerms() {
         agreeTermsHref.scrollTo();
         agreeTermsHref.shouldHave(Condition.href("/docs/agreement.pdf?v3"));
         return this;
     }
 
-    /*Проверка ссылки в элементе - Условия политики конфеденциальности и перс. данных*/
+    @Step("Проверяю ссылку в элементе - Условия политики конфеденциальности и перс. данных*")
     public FdmRegistrationPage checkedLinkOnAgreeTermsPolitics() {
         agreeTermsPoliticsHref.shouldHave(Condition.href("/docs/privacy.pdf?v3"));
         return this;
     }
 
-    /*Клик по кнопке Зарегестрироваться с пропущенными обязательными полями*/
+    @Step("Кликаю по кнопке Зарегестрироваться с пропущенными обязательными полями")
     public FdmRegistrationPage clickOnRegistrationBtn() {
         registrarionBtn.scrollTo();
         registrarionBtn.shouldBe(Condition.enabled).click();
         return this;
     }
 
-    /*Проверка вывода ошибки Поле Фамилия*/
+    @Step("Проверяю вывод ошибки - Заполните поле Фамилия")
     public FdmRegistrationPage checkedLastNameError() {
         Selenide.refresh();
         errorLastName.shouldHave(Condition.text("Заполните поле Фамилия"));
         return this;
     }
 
-    /*Проверка вывода ошибки Поле Имя*/
+    @Step("Проверяю вывод ошибки - Заполните поле Имя")
     public FdmRegistrationPage checkedNameError() {
         errorName.shouldHave(Condition.text("Заполните поле Имя"));
         return this;
     }
 
-    /*Проверка вывода ошибки Поле Отчетсво*/
+    @Step("Проверяю вывод ошибки - Заполните поле Отчество")
     public FdmRegistrationPage checkedPatronymicError() {
         errorPatronymic.shouldHave(Condition.text("Заполните поле Отчество"));
         return this;
     }
 
-    /*Проверка вывода ошибки Поле Номер телефона*/
+    @Step("Проверяю вывод ошибки - Телефон введен некорректно")
     public FdmRegistrationPage checkedNumberError() {
         errorNumber.shouldHave(Condition.text("Телефон введен некорректно"));
         return this;
     }
 
-    /*Проверка вывода ошибки Поле Email*/
+    @Step("Проверяю вывод ошибки - Заполните поле Email")
     public FdmRegistrationPage checkedEmailError() {
         errorEmail.shouldHave(Condition.text("Заполните поле Email"));
         return this;
     }
 
-    /*Проверка вывода ошибки Поле Условия пользовательского соглашения*/
+    @Step("Проверяю вывод ошибки - Для продолжения Вам необходимо согласиться с условиями пользовательского соглашения")
     public FdmRegistrationPage checkedAgreeTermsError() {
         agreeTerms.scrollTo();
         errorAgreeTerms.shouldHave(Condition
@@ -206,44 +206,44 @@ public class FdmRegistrationPage {
         return this;
     }
 
-    /*Проверка вывода ошибки Поле Условия политики конфеденциальности*/
+    @Step("Проверяю вывод ошибки - Для продолжения Вам необходимо согласиться с условиями политики конфиденциальности")
     public FdmRegistrationPage checkedAgreeTermsPoliticsError() {
         errorAgreeTermsPolitics.shouldHave(Condition
                 .text("Для продолжения Вам необходимо согласиться с условиями политики конфиденциальности"));
         return this;
     }
 
-    /*Проверка вывода ошибки, что номер телефона уже занят*/
+    @Step("Проверяю вывод ошибки - Указанный телефон уже занят")
     public FdmRegistrationPage checkedRegisteredNumberError() {
         errorRegisteredNumber.shouldHave(Condition.text("Указанный телефон уже занят"));
         return this;
     }
 
-    /*Уже зарегестрированная почта*/
+    @Step("Ввожу уже зарегестрированный адрес почты")
     public FdmRegistrationPage insertRegisteredEmail() {
         email.shouldBe(Condition.editable).setValue(VALID_REGISTERED_EMAIL);
         return this;
     }
 
-    /*Проверка вывода ошибки, что данная почта уже занята*/
+    @Step("Проверяю вывод ошибки - Указанный email уже занят")
     public FdmRegistrationPage checkedRegisteredEmailError() {
         errorRegisteredEmail.shouldHave(Condition.text("Указанный email уже занят"));
         return this;
     }
 
-    /*Фамилия*/
+    @Step("Ввожу в поле Фамилия - спец символы")
     public FdmRegistrationPage insertInvalidLastName() {
         lastname.shouldBe(Condition.editable).setValue(INVALID_LAST_NAME);
         return this;
     }
 
-    /*Имя*/
+    @Step("Ввожу в поле Имя - спец символы")
     public FdmRegistrationPage insertInvalidName() {
         name.shouldBe(Condition.editable, Duration.ofSeconds(30)).setValue(INVALID_NAME);
         return this;
     }
 
-    /*Отчество*/
+    @Step("Ввожу в поле Отчество - спец символы")
     public FdmRegistrationPage insertInvalidPatronymic() {
         patronymic.shouldBe(Condition.editable).setValue(INVALID_PATRONYMIC);
         return this;
@@ -255,21 +255,21 @@ public class FdmRegistrationPage {
         return this;
     }
 
-    /*Проверка вывода ошибки Поле Фамилия*/
+    @Step("Проверяю вывод ошибки - Использованы недопустимые символы - в поле Фамилия")
     public FdmRegistrationPage checkedInvalidLastNameError() {
         Selenide.refresh();
         errorInvalidLastName.shouldHave(Condition.text("Использованы недопустимые символы"));
         return this;
     }
 
-    /*Проверка вывода ошибки Поле Имя*/
+    @Step("Проверяю вывод ошибки - Использованы недопустимые символы - в поле Имя")
     public FdmRegistrationPage checkedInvalidNameError() {
         Selenide.refresh();
         errorInvalidName.shouldHave(Condition.text("Использованы недопустимые символы"));
         return this;
     }
 
-    /*Проверка вывода ошибки Поле Отчество*/
+    @Step("Проверяю вывод ошибки - Использованы недопустимые символы - в поле Отчество")
     public FdmRegistrationPage checkedInvalidPatronymicError() {
         Selenide.refresh();
         errorInvalidPatronymic.shouldHave(Condition.text("Использованы недопустимые символы"));
