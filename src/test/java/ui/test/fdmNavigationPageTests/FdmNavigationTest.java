@@ -93,6 +93,28 @@ public class FdmNavigationTest extends BaseTest {
                 .clickOnPromo3();
     }
     @Test
+    @DisplayName("Тест - Навигация - проверка слайдера на главной странице")
+    public void checkedSliderInMainPage() {
+        fdmNavigationPage.clickOnEnter()
+                .checkedAuthModal()
+                .insertValidPhone()
+                .clickOnEntryBtn()
+                .insertValidCode()
+                .clickOnEntryBtnPrimary()
+                .checkedSliderOnMainPage();
+    }
+    @Test
+    @DisplayName("Тест - Навигация - проверка отображения элементов")
+    public void elementsTest() {
+        fdmNavigationPage.clickOnEnter()
+                .checkedAuthModal()
+                .insertValidPhone()
+                .clickOnEntryBtn()
+                .insertValidCode()
+                .clickOnEntryBtnPrimary()
+                .checkedElements();
+    }
+    @Test
     @DisplayName("Тест - Навигация - проверка отображения и работы свайпера на главной")
     public void swiperTest() {
         fdmNavigationPage.clickOnEnter()

@@ -38,6 +38,16 @@ public class FdmNavigationPage {
 
     private final SelenideElement swiper = $x("//div[(@class=\"swiper-navigation swiper-button-next\")]");
 
+    private final SelenideElement sliderOnMainPage = $x("//div[(@class=\"main-producers\")]");
+    private final SelenideElement sliderButton = $x("//div[(@class=\"swiper-navigation swiper-button-next producers-next\")]");
+
+    private final SelenideElement itemPrices = $x("//div[(@class=\"main-benefits\")]//ancestor::div[(@class=\"item prices\")]");
+    private final SelenideElement itemPayment = $x("//div[(@class=\"main-benefits\")]//ancestor::div[(@class=\"item payment\")]");
+    private final SelenideElement itemComplaints = $x("//div[(@class=\"main-benefits\")]//ancestor::div[(@class=\"item complaints\")]");
+    private final SelenideElement itemProduction = $x("//div[(@class=\"main-benefits\")]//ancestor::div[(@class=\"item production\")]");
+    private final SelenideElement itemControl = $x("//div[(@class=\"main-benefits\")]//ancestor::div[(@class=\"item control\")]");
+    private final SelenideElement itemSamples = $x("//div[(@class=\"main-benefits\")]//ancestor::div[(@class=\"item samples\")]");
+
     private final SelenideElement personalPoliticDataHref = $x("//div[(@class=\"footer__politic\")]//ancestor::a[(@href=\"/docs/personal.pdf?v3\")]");
     private final SelenideElement privacyPoliticHref = $x("//div[(@class=\"footer__politic\")]//ancestor::a[(@href=\"/docs/privacy.pdf?v3\")]");
     private final SelenideElement legalEntityHref = $x("//div[(@class=\"footer__politic\")]//ancestor::a[(@href=\"/docs/offer_legal_entity.pdf\")]");
@@ -131,8 +141,25 @@ public class FdmNavigationPage {
     }
     /*Переход к свайперу*/
     public FdmNavigationPage clickSwipeNext() {
-        swiper.should();
+        swiper.scrollTo();
         swiper.shouldBe(Condition.enabled, Duration.ofSeconds(30));
+        return this;
+    }
+    /*Проверка слайдера на главной*/
+    public FdmNavigationPage checkedSliderOnMainPage() {
+        sliderOnMainPage.scrollTo();
+        sliderButton.shouldBe(Condition.enabled);
+        return this;
+    }
+    /*Проверка отображения элементов после слайдера*/
+    public FdmNavigationPage checkedElements() {
+        itemPrices.scrollTo();
+        itemPrices.shouldBe(Condition.visible);
+        itemPayment.shouldBe(Condition.visible);
+        itemComplaints.shouldBe(Condition.visible);
+        itemProduction.shouldBe(Condition.visible);
+        itemControl.shouldBe(Condition.visible);
+        itemSamples.shouldBe(Condition.visible);
         return this;
     }
     /*Переход ссылкам в футере*/
