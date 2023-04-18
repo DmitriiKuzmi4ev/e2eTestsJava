@@ -85,7 +85,7 @@ public class FdmFeedbackFormPage {
         return this;
     }
 
-    @Step("Скролю страницу до формы обратной связи. Проверяю доступной полей и заполняю их")
+    @Step("Скролю страницу до формы обратной связи. Проверяю доступность полей и заполняю их")
     public FdmFeedbackFormPage checkedFormField() {
         feedbackForm.scrollTo();
         nameField.shouldBe(Condition.editable).setValue(VALID_FEED_NAME);
