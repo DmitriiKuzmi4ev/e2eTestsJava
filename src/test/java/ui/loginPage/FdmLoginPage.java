@@ -42,91 +42,90 @@ public class FdmLoginPage {
      */
 
 
-    /*Подтверждение города*/
     @Step("Подтверждаю город")
     public FdmLoginPage clickOnApplyCity() {
         applyCity.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
 
-    /*Кнопка Вход*/
+
     @Step("Кликаю на кнопку Вход на главной странице")
     public FdmLoginPage clickOnEnter() {
         enter.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
 
-    /*Проверка - модальное окно входа появилось*/
+
     @Step("Проверяю, что отобразилось модальное окно авторизации")
     public FdmLoginPage checkedAuthModal() {
         authModal.shouldBe(Condition.visible, Duration.ofSeconds(30));
         return this;
     }
 
-    /*Ввод номера валидного номер телефона*/
+
     @Step("Ввожу валидный номер телефона")
     public FdmLoginPage insertValidPhone() {
         phoneInput.shouldBe(Condition.editable).setValue(VALID_NUM);
         return this;
     }
 
-    /*Кнопка ВОЙТИ*/
+
     @Step("Кликаю по кнопке Войти")
     public FdmLoginPage clickOnEntryBtn() {
         entryBtn.shouldBe(Condition.editable, Duration.ofSeconds(30)).click();
         return this;
     }
 
-    /*Ввод валидного когда авторизации*/
+
     @Step("Ввожу код подтверждения")
     public FdmLoginPage insertValidCode() {
         codeInput.shouldBe(Condition.editable).setValue(VALID_CODE);
         return this;
     }
 
-    /*Кнопка ВОЙТИ основная*/
+
     @Step("Кликаю по кнопке Войти (после ввода кода авторизации)")
     public FdmLoginPage clickOnEntryBtnPrimary() {
         entryBtnPrimary.shouldBe(Condition.editable).click();
         return this;
     }
 
-    /*Проверка, что пользователь авторизовался*/
+
     @Step("Проверяю, что авторизация прошла успешно - отображается кнопка Выход")
     public FdmLoginPage checkedLogOutBtn() {
         logOutBtn.shouldHave(Condition.exactText("Выход"));
         return this;
     }
 
-    /*Ввод номера невалидного номер телефона*/
+
     @Step("Ввожу не валидный номер телефона")
     public FdmLoginPage insertInvalidPhone() {
         phoneInput.shouldBe(Condition.editable).setValue(INVALID_NUM);
         return this;
     }
 
-    /*Проверка, что введен номер не соответствующий формату*/
+
     @Step("Проверяю, что отобразилось сообщение - Неверный формат номера телефона")
     public FdmLoginPage checkedInvalidPhoneError() {
         phoneError.shouldHave(Condition.exactText("Неверный формат номера телефона"));
         return this;
     }
 
-    /*Ввод неверного кода авторизации*/
+
     @Step("Ввожу не верный код авторизации")
     public FdmLoginPage insertInvalidCode() {
         codeInput.shouldBe(Condition.editable).setValue(INVALID_CODE);
         return this;
     }
 
-    /*Клик по кнопке выход*/
+
     @Step("Кликаю по кнопке - Выход")
     public FdmLoginPage clickOnLogOutBtn() {
         logOutBtn.shouldBe(Condition.editable, Duration.ofSeconds(30)).click();
         return this;
     }
 
-    /*Проверка, что пользователь вышел из личного кабинета*/
+
     @Step("Проверяю, что осуществился выход из системы")
     public FdmLoginPage checkedLogOut() {
         logOut.shouldHave(Condition.exactText("Вход"));
