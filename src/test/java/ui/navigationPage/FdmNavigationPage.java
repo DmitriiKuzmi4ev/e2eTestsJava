@@ -2,6 +2,7 @@ package ui.navigationPage;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 
 import java.time.Duration;
 
@@ -59,99 +60,105 @@ public class FdmNavigationPage {
      * Блок с методами позитивных и негативных сценариев навигации
      */
 
-    /*Подтверждение города*/
+    @Step("Подтверждаю, что город выбран верно")
     public FdmNavigationPage clickOnApplyCity() {
         applyCity.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
 
-    /*Кнопка Вход*/
+    @Step("Кликаю на кнопку Вход на главной странице")
     public FdmNavigationPage clickOnEnter() {
         enter.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
 
-    /*Проверка - модальное окно входа появилось*/
+    @Step("Проверяю, что отобразилось модальное окно авторизации")
     public FdmNavigationPage checkedAuthModal() {
         authModal.shouldBe(Condition.visible, Duration.ofSeconds(30));
         return this;
     }
 
-    /*Ввод номера валидного номер телефона*/
+    @Step("Ввожу валидный номер телефона")
     public FdmNavigationPage insertValidPhone() {
         phoneInput.shouldBe(Condition.editable).setValue(VALID_NUM);
         return this;
     }
 
-    /*Кнопка ВОЙТИ*/
+    @Step("Кликаю по кнопке Войти")
     public FdmNavigationPage clickOnEntryBtn() {
         entryBtn.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
 
-    /*Ввод валидного когда авторизации*/
+    @Step("Ввожу код подтверждения")
     public FdmNavigationPage insertValidCode() {
         codeInput.shouldBe(Condition.editable).setValue(VALID_CODE);
         return this;
     }
 
-    /*Кнопка ВОЙТИ основная*/
+    @Step("Кликаю по кнопке Войти (после ввода кода авторизации)")
     public FdmNavigationPage clickOnEntryBtnPrimary() {
         entryBtnPrimary.shouldBe(Condition.enabled).click();
         return this;
     }
 
-    /*Клик по кнопке Каталог*/
+    @Step("Проверяю, что кнока - Каталог активна и по ней осуществляется переход")
     public FdmNavigationPage clickOnCatalogBtn() {
         catalogBtn.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
 
-    /*Клик по кнопке Доставка*/
+    @Step("Проверяю, что кнока - Доставка активна и по ней осуществляется переход")
     public FdmNavigationPage clickOnDeliveryBtn() {
         deliveryBtn.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
 
-    /*Клик по кнопке Оплата*/
+    @Step("Проверяю, что кнока - Оплата активна и по ней осуществляется переход")
     public FdmNavigationPage clickOnPayBtn() {
         payBtn.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
 
-    /*Клик по кнопке Возврат*/
+    @Step("Проверяю, что кнока - Возврат активна и по ней осуществляется переход")
     public FdmNavigationPage clickOnReturnBtn() {
         returnBtn.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
-    /*Клик по баннеру 1*/
+
+    @Step("Проверяю, что Баннер 1 - активен и по нему осуществляется переход")
     public FdmNavigationPage clickOnPromo1() {
         promo1.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
-    /*Клик по баннеру 2*/
+
+    @Step("Проверяю, что Баннер 2 - активен и по нему осуществляется переход")
     public FdmNavigationPage clickOnPromo2() {
         promo2.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
-    /*Клик по баннеру 3*/
+
+    @Step("Проверяю, что Баннер 3 - активен и по нему осуществляется переход")
     public FdmNavigationPage clickOnPromo3() {
         promo3.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
-    /*Переход к свайперу*/
+
+    @Step("Проверяю, что свайпер на главной - активен и функционирует корректно")
     public FdmNavigationPage clickSwipeNext() {
         swiper.scrollTo();
         swiper.shouldBe(Condition.enabled, Duration.ofSeconds(30));
         return this;
     }
-    /*Проверка слайдера на главной*/
+
+    @Step("Проверяю, что слайдер с фабриками на главной - активен и по нему осуществляется переход")
     public FdmNavigationPage checkedSliderOnMainPage() {
         sliderOnMainPage.scrollTo();
         sliderButton.shouldBe(Condition.enabled);
         return this;
     }
-    /*Проверка отображения элементов после слайдера*/
+
+    @Step("Проверяю, элементы ниже слайдера отображаются на странице")
     public FdmNavigationPage checkedElements() {
         itemPrices.scrollTo();
         itemPrices.shouldBe(Condition.visible);
@@ -162,7 +169,8 @@ public class FdmNavigationPage {
         itemSamples.shouldBe(Condition.visible);
         return this;
     }
-    /*Переход ссылкам в футере*/
+
+    @Step("Проверяю, что ссылки в футере не битые")
     public FdmNavigationPage checkFooterLinks() {
         personalPoliticDataHref.should();
         personalPoliticDataHref.shouldBe(Condition.enabled, Duration.ofSeconds(30));
