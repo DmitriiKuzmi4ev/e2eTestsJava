@@ -2,7 +2,6 @@ package ui.feedbackFormPage;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import ui.navigationPage.FdmNavigationPage;
 
 import java.time.Duration;
 
@@ -18,10 +17,8 @@ public class FdmFeedbackFormPage {
     private static final String VALID_FEED_NUMBER = "5647874590";
     private static final String VALID_FEED_MESSAGE = "Произвольный текст";
 
-
-
     /**
-     * Блок с локаторами для сценариев навигации
+     * Блок с локаторами для сценариев формы обратной связи
      */
 
     private final SelenideElement applyCity = $x("//*[@id=\"closeSelectCityModal\"]");
@@ -104,6 +101,7 @@ public class FdmFeedbackFormPage {
         successSubmit.shouldHave(Condition.text("Сообщение отправлено!"));
         return this;
     }
+
 
 
 

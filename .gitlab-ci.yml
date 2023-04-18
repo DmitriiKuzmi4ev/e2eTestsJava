@@ -15,7 +15,7 @@ SMOKE TESTS:
   allow_failure: true
   script:
     - echo "Запуск тестов"
-    - gradle clean test -Dtags=Smoke
+    - gradle test -Dtags=Smoke
   artifacts:
     when: always
     paths:
@@ -25,8 +25,8 @@ SMOKE TESTS:
 ALLURE:
   stage: allure
   script:
-    - gradle allureServe
-    - echo "Allure report is here - http://192.168.108.30:53266/"
+    - gradle allureReport
+    - echo "Allure report is here - http://localhost:63342/SelenideTestingNewGradle/build/reports/allure-report/allureReport/index.html?_ijt=otfao76sodnuj65itka2sema70&_ij_reload=RELOAD_ON_SAVE"
   artifacts:
     when: always
     paths:

@@ -1,4 +1,4 @@
-package ui.RIM;
+package ui.rim;
 
 public class RIMFacadeOfBlackEarth {
 }

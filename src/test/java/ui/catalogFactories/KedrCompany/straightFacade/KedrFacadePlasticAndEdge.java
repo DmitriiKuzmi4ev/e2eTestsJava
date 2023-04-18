@@ -1,4 +1,4 @@
-package ui.CatalogFactories.KedrCompany.straightFacade;
+package ui.catalogFactories.KedrCompany.straightFacade;
 
 import com.codeborne.selenide.*;
 import utils.RandomUtils;

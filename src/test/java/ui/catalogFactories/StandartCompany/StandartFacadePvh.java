@@ -1,7 +1,6 @@
-package ui.CatalogFactories.StandartCompany;
+package ui.catalogFactories.StandartCompany;
 
 import com.codeborne.selenide.*;
-import org.openqa.selenium.NoAlertPresentException;
 import utils.RandomUtils;
 
 import java.time.Duration;
