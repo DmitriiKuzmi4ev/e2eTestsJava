@@ -2,6 +2,7 @@ package ui.feedbackFormPage;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 
 import java.time.Duration;
 
@@ -42,47 +43,49 @@ public class FdmFeedbackFormPage {
      * Блок с методами позитивных и негативных сценариев формы обратной связи
      */
 
-    /*Подтверждение города*/
+    @Step("Подтверждаю, что город выбран верно")
     public FdmFeedbackFormPage clickOnApplyCity() {
         applyCity.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
-    /*Кнопка Вход*/
+
+    @Step("Кликаю на кнопку Вход на главной странице")
     public FdmFeedbackFormPage clickOnEnter() {
         enter.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
 
-    /*Проверка - модальное окно входа появилось*/
+    @Step("Проверяю, что отобразилось модальное окно авторизации")
     public FdmFeedbackFormPage checkedAuthModal() {
         authModal.shouldBe(Condition.visible, Duration.ofSeconds(30));
         return this;
     }
 
-    /*Ввод номера валидного номер телефона*/
+    @Step("Ввожу валидный номер телефона")
     public FdmFeedbackFormPage insertValidPhone() {
         phoneInput.shouldBe(Condition.editable).setValue(VALID_NUM);
         return this;
     }
 
-    /*Кнопка ВОЙТИ*/
+    @Step("Кликаю по кнопке Войти")
     public FdmFeedbackFormPage clickOnEntryBtn() {
         entryBtn.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
 
-    /*Ввод валидного когда авторизации*/
+    @Step("Ввожу код подтверждения")
     public FdmFeedbackFormPage insertValidCode() {
         codeInput.shouldBe(Condition.editable).setValue(VALID_CODE);
         return this;
     }
 
-    /*Кнопка ВОЙТИ основная*/
+    @Step("Кликаю по кнопке Войти (после ввода кода авторизации)")
     public FdmFeedbackFormPage clickOnEntryBtnPrimary() {
         entryBtnPrimary.shouldBe(Condition.enabled).click();
         return this;
     }
-    /*Форма обратной связи - заполнение полей*/
+
+    @Step("Скролю страницу до формы обратной связи. Проверяю доступной полей и заполняю их")
     public FdmFeedbackFormPage checkedFormField() {
         feedbackForm.scrollTo();
         nameField.shouldBe(Condition.editable).setValue(VALID_FEED_NAME);
@@ -90,7 +93,8 @@ public class FdmFeedbackFormPage {
         textArea.shouldBe(Condition.editable).setValue(VALID_FEED_MESSAGE);
         return this;
     }
-    /*Форма обратной связи - отправка сообщения*/
+
+    @Step("Кликаю на кнопку - Отправить сообщение и проверяю, что выводится - Сообщение отправлено!")
     public FdmFeedbackFormPage checkedSendMessage() {
         feedbackForm.scrollTo();
         nameField.shouldBe(Condition.editable).setValue(VALID_FEED_NAME);
