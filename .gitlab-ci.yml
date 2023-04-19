@@ -15,7 +15,7 @@ SMOKE TESTS:
   allow_failure: true
   script:
     - echo "Запуск тестов"
-    - gradle test -Dtags=Smoke
+    - gradle clean test
   artifacts:
     when: always
     paths:
@@ -31,3 +31,29 @@ ALLURE:
     when: always
     paths:
       - build/reports/allure-report/allureReport/*
+
+
+#image: docker:latest
+#
+#stages:
+#  - test
+#  - report
+#test:
+#  services:
+#    - docker:dind
+#  script:
+#    - echo "Запуск тестов"
+#    - docker run --rm -v $PWD:/project -w /project gradle:latest gradle clean test
+#  artifacts:
+#    when: always
+#    paths:
+#      - build/allure-results
+#
+#report:
+#  script:
+#    - docker run --rm -v $PWD:/project -w /project qameta/allure-commandline gradle allureReport
+#    - echo "Allure report is here - http://localhost:63342/SelenideTestingNewGradle/build/reports/allure-report/allureReport/index.html?_ijt=otfao76sodnuj65itka2sema70&_ij_reload=RELOAD_ON_SAVE"
+#  artifacts:
+#    when: always
+#    paths:
+#      - build/reports/allure-report/allureReport/*
