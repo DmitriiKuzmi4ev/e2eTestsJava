@@ -68,7 +68,7 @@ public class FdmNavigationPage {
 
     @Step("Кликаю на кнопку Вход на главной странице")
     public FdmNavigationPage clickOnEnter() {
-        enter.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
+        enter.shouldBe(Condition.visible, Duration.ofSeconds(30)).click();
         return this;
     }
 
