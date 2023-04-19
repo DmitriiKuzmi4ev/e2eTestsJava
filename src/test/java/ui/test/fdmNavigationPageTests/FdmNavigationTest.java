@@ -14,7 +14,6 @@ public class FdmNavigationTest extends BaseTest {
         fdmNavigationPage = new FdmNavigationPage(); //инициализация главной страницы
         fdmNavigationPage.clickOnApplyCity();
     }
-
     @Test
     @DisplayName("Тест - Навигация -  переход по кнопке - Каталог")
     public void catalogBtnTest() {
@@ -136,5 +135,6 @@ public class FdmNavigationTest extends BaseTest {
                 .clickOnEntryBtnPrimary()
                 .checkFooterLinks();
     }
+
 
 }

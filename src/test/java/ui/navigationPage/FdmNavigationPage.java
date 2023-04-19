@@ -56,6 +56,7 @@ public class FdmNavigationPage {
     private final SelenideElement paymentsHref = $x("//div[(@class=\"footer__politic\")]//ancestor::a[(@href=\"/kontakty\")]");
     private final SelenideElement aboutHref = $x("//div[(@class=\"footer__politic\")]//ancestor::a[(@href=\"/o-nas\")]");
 
+
     /**
      * Блок с методами позитивных и негативных сценариев навигации
      */
@@ -181,11 +182,6 @@ public class FdmNavigationPage {
         aboutHref.shouldBe(Condition.enabled, Duration.ofSeconds(30));
         return this;
     }
-
-
-
-
-
 
 
 

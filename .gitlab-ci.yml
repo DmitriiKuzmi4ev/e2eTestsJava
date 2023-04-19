@@ -26,7 +26,6 @@ ALLURE:
   stage: allure
   script:
     - gradle allureReport
-    - echo "Allure report is here - http://localhost:63342/SelenideTestingNewGradle/build/reports/allure-report/allureReport/index.html?_ijt=otfao76sodnuj65itka2sema70&_ij_reload=RELOAD_ON_SAVE"
   artifacts:
     when: always
     paths:
@@ -51,6 +50,7 @@ ALLURE:
 #
 #report:
 #  script:
+#    - echo "Формирование отчета"
 #    - docker run --rm -v $PWD:/project -w /project qameta/allure-commandline gradle allureReport
 #    - echo "Allure report is here - http://localhost:63342/SelenideTestingNewGradle/build/reports/allure-report/allureReport/index.html?_ijt=otfao76sodnuj65itka2sema70&_ij_reload=RELOAD_ON_SAVE"
 #  artifacts:
