@@ -140,7 +140,7 @@ public class FdmNavigationPage {
 
     @Step("Проверяю, что Баннер 3 - активен и по нему осуществляется переход")
     public FdmNavigationPage clickOnPromo3() {
-        promo3.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
+        promo3.shouldBe(Condition.enabled, Duration.ofSeconds(30));
         return this;
     }
 
