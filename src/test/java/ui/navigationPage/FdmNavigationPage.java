@@ -21,7 +21,7 @@ public class FdmNavigationPage {
      */
 
     private final SelenideElement applyCity = $x("//*[@id=\"closeSelectCityModal\"]");
-    private final SelenideElement enter = $x("//header[(@class=\"header\")]//ancestor::a[(@data-link=\"/personal/login_modal\")]");
+    private final SelenideElement enter = $x("//body[(@class=\"body-page\")]//ancestor::a[(@data-target=\"#auth-modal\")]");
     private final SelenideElement authModal = $x("//div[(@id=\"auth-modal\")]//ancestor::div[(@class=\"modal-body form-container\")]");
     private final SelenideElement phoneInput = $x("//input[(@id=\"phoneInput\")]");
     private final SelenideElement entryBtn = $x("//div[(@class=\"col center\")]//ancestor::button[(@type=\"submit\")]");
