@@ -39,7 +39,7 @@ public class FdmNavigationPage {
 
     private final SelenideElement swiper = $x("//div[(@class=\"swiper-navigation swiper-button-next\")]");
 
-    private final SelenideElement sliderOnMainPage = $x("//div[(@class=\"main-producers\")]");
+    private final SelenideElement sliderOnMainPage = $x("//div[@class=\"main-producers\"]");
     private final SelenideElement sliderButton = $x("//div[(@class=\"swiper-navigation swiper-button-next producers-next\")]");
 
     private final SelenideElement itemPrices = $x("//div[(@class=\"main-benefits\")]//ancestor::div[(@class=\"item prices\")]");
