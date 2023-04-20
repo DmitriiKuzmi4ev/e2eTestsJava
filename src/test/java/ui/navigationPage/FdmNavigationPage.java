@@ -39,8 +39,7 @@ public class FdmNavigationPage {
 
     private final SelenideElement swiper = $x("//div[(@class=\"swiper-navigation swiper-button-next\")]");
 
-    private final SelenideElement sliderOnMainPage = $x("//div[@class=\"main-producers\"]");
-    private final SelenideElement sliderButton = $x("//div[(@class=\"swiper-navigation swiper-button-next producers-next\")]");
+    private final SelenideElement mainProducers = $x("//div[@class=\"producers-list\"]");
 
     private final SelenideElement itemPrices = $x("//div[(@class=\"main-benefits\")]//ancestor::div[(@class=\"item prices\")]");
     private final SelenideElement itemPayment = $x("//div[(@class=\"main-benefits\")]//ancestor::div[(@class=\"item payment\")]");
@@ -152,10 +151,9 @@ public class FdmNavigationPage {
         return this;
     }
 
-    @Step("Проверяю, что слайдер с фабриками на главной - активен и по нему осуществляется переход")
+    @Step("Проверяю, что блок с лого фабрик на главной - виден, ссылки доступны")
     public FdmNavigationPage checkedSliderOnMainPage() {
-        sliderOnMainPage.scrollTo();
-        sliderButton.shouldBe(Condition.enabled);
+        mainProducers.scrollTo().shouldBe(Condition.visible);
         return this;
     }
 
