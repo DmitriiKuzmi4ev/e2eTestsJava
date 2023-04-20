@@ -1,11 +1,13 @@
 package ui.navigationPage;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
 import java.time.Duration;
 
+import static com.codeborne.selenide.Selenide.$$x;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class FdmNavigationPage {
@@ -55,6 +57,7 @@ public class FdmNavigationPage {
     private final SelenideElement paymentsHref = $x("//div[(@class=\"footer__politic\")]//ancestor::a[(@href=\"/kontakty\")]");
     private final SelenideElement aboutHref = $x("//div[(@class=\"footer__politic\")]//ancestor::a[(@href=\"/o-nas\")]");
 
+    private final SelenideElement factoryList = $x("//nav[(@class=\"factory-list open\")]");
 
     /**
      * Блок с методами позитивных и негативных сценариев навигации
@@ -180,7 +183,12 @@ public class FdmNavigationPage {
         aboutHref.shouldBe(Condition.enabled, Duration.ofSeconds(30));
         return this;
     }
-
+    @Step("Проверяю, что  в разделе Каталог присутствуют кнопки с наименованиями фабрик")
+    public FdmNavigationPage checkFactoryList() {
+        catalogBtn.shouldBe(Condition.visible).click();
+        factoryList.shouldBe(Condition.visible);
+        return this;
+    }
 
 
 

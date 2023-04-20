@@ -135,6 +135,17 @@ public class FdmNavigationTest extends BaseTest {
                 .clickOnEntryBtnPrimary()
                 .checkFooterLinks();
     }
+    @Test
+    @DisplayName("Тест - Навигация - проверка видимости производителей в разделе Каталог")
+    public void checkCatalogList() {
+        fdmNavigationPage.clickOnEnter()
+                .checkedAuthModal()
+                .insertValidPhone()
+                .clickOnEntryBtn()
+                .insertValidCode()
+                .clickOnEntryBtnPrimary()
+                .checkFactoryList();
+    }
 
 
 }
