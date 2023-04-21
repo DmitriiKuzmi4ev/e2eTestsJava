@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ui.test.fdmNavigationPageTests.FdmNavigationTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2023-04-21T08:38:32" hostname="KO-66-PC" time="70.029">
+  <properties/>
+  <testcase name="Тест - Навигация -  переход по кнопке - Доставка" classname="ui.test.fdmNavigationPageTests.FdmNavigationTest" time="5.982"/>
+  <testcase name="Тест - Навигация -  переход по кнопке - Оплата" classname="ui.test.fdmNavigationPageTests.FdmNavigationTest" time="5.954"/>
+  <testcase name="Тест - Навигация - проверка отображения элементов" classname="ui.test.fdmNavigationPageTests.FdmNavigationTest" time="6.25"/>
+  <testcase name="Тест - Навигация - проверка битых ссылок в футтере сайта" classname="ui.test.fdmNavigationPageTests.FdmNavigationTest" time="6.89"/>
+  <testcase name="Тест - Навигация - проверка отображения и работы свайпера на главной" classname="ui.test.fdmNavigationPageTests.FdmNavigationTest" time="5.367"/>
+  <testcase name="Тест - Навигация -  переход по кнопке - Каталог" classname="ui.test.fdmNavigationPageTests.FdmNavigationTest" time="5.679"/>
+  <testcase name="Тест - Навигация -  переход по баннеру 1 - выбрать производителя" classname="ui.test.fdmNavigationPageTests.FdmNavigationTest" time="5.811"/>
+  <testcase name="Тест - Навигация -  переход по баннеру 2 - образцы в подарок" classname="ui.test.fdmNavigationPageTests.FdmNavigationTest" time="5.693"/>
+  <testcase name="Тест - Навигация -  переход по баннеру 3 - текущая акция" classname="ui.test.fdmNavigationPageTests.FdmNavigationTest" time="5.435"/>
+  <testcase name="Тест - Навигация - проверка видимости производителей в разделе Каталог" classname="ui.test.fdmNavigationPageTests.FdmNavigationTest" time="5.767"/>
+  <testcase name="Тест - Навигация -  переход по кнопке - Возврат" classname="ui.test.fdmNavigationPageTests.FdmNavigationTest" time="5.752"/>
+  <testcase name="Тест - Навигация - проверка слайдера на главной странице" classname="ui.test.fdmNavigationPageTests.FdmNavigationTest" time="5.436"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 25689
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 29116
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 28566
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 7453
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 33151
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 18590
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 20874
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 45121
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 40884
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 29622
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 18096
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 30897
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+</testsuite>
