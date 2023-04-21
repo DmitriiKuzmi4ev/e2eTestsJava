@@ -84,7 +84,7 @@ public class FdmFeedbackFormPage {
         entryBtnPrimary.shouldBe(Condition.enabled).click();
         return this;
     }
-    @Step("Скролю страницу до формы обратной связи. Проверяю доступность полей и заполняю их")
+    @Step("Скролю страницу до формы обратной связи и проверяю, видна ли форма")
     public FdmFeedbackFormPage checkedForm() {
         feedbackForm.scrollTo();
         feedbackForm.shouldBe(Condition.visible);
