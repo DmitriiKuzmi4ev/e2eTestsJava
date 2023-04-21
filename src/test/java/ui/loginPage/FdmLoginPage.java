@@ -51,7 +51,7 @@ public class FdmLoginPage {
 
     @Step("Кликаю на кнопку Вход на главной странице")
     public FdmLoginPage clickOnEnter() {
-        enter.shouldBe(Condition.visible, Duration.ofSeconds(30)).click();
+        enter.shouldBe(Condition.exist, Duration.ofSeconds(30)).click();
         return this;
     }
 

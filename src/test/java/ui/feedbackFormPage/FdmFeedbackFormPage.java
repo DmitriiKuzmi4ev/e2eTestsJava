@@ -84,7 +84,12 @@ public class FdmFeedbackFormPage {
         entryBtnPrimary.shouldBe(Condition.enabled).click();
         return this;
     }
-
+    @Step("Скролю страницу до формы обратной связи. Проверяю доступность полей и заполняю их")
+    public FdmFeedbackFormPage checkedForm() {
+        feedbackForm.scrollTo();
+        feedbackForm.shouldBe(Condition.visible);
+        return this;
+    }
     @Step("Скролю страницу до формы обратной связи. Проверяю доступность полей и заполняю их")
     public FdmFeedbackFormPage checkedFormField() {
         feedbackForm.scrollTo();
@@ -93,7 +98,6 @@ public class FdmFeedbackFormPage {
         textArea.shouldBe(Condition.editable).setValue(VALID_FEED_MESSAGE);
         return this;
     }
-
     @Step("Кликаю на кнопку - Отправить сообщение и проверяю, что выводится - Сообщение отправлено!")
     public FdmFeedbackFormPage checkedSendMessage() {
         feedbackForm.scrollTo();

@@ -16,6 +16,17 @@ public class FdmFeedbackFormTest extends BaseTest {
         fdmFeedbackFormPage.clickOnApplyCity();
     }
     @Test
+    @DisplayName("Тест - Форма обратной связи - видимость на странице")
+    public void feedbackFormCheckTest() {
+        fdmFeedbackFormPage.clickOnEnter()
+                .checkedAuthModal()
+                .insertValidPhone()
+                .clickOnEntryBtn()
+                .insertValidCode()
+                .clickOnEntryBtnPrimary()
+                .checkedForm();
+    }
+    @Test
     @DisplayName("Тест - Форма обратной связи - заполнение полей")
     public void feedbackFormFillTest() {
         fdmFeedbackFormPage.clickOnEnter()
