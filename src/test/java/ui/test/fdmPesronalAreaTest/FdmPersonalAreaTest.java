@@ -95,5 +95,6 @@ public class FdmPersonalAreaTest extends BaseTest {
                 .getRandomOrderToCart()
                 .clickOnShoppingCart()
                 .checkOrderOnCart();
+
     }
 }

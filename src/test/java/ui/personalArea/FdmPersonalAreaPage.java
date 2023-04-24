@@ -40,6 +40,8 @@ public class FdmPersonalAreaPage {
 
     private final ElementsCollection orderCart = $$x("//a[contains(@class, \"add-order-basket-js\")]");
     private final SelenideElement orderTableInCart = $x("//table[(@class=\"table table-outline table-vcenter card-table\")]");
+    private final SelenideElement clearCart = $x("//a[(@class=\"btn btn-lg btn-clear w-100 clear-basket-js cart-clear\")]");
+    private final SelenideElement statusCart = $x("//div[(@id=\"basketTotal\")]");
 
     /**
      * Блок с методами позитивных и негативных сценариев проверки личного кабинета
