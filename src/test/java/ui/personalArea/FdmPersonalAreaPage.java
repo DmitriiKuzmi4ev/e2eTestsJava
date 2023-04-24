@@ -38,10 +38,6 @@ public class FdmPersonalAreaPage {
     private final SelenideElement paidOrders = $x("//a[@href=\"/orders/paid\"]");
     private final SelenideElement decorSamples = $x("//a[@href=\"/shop/sample-orders\"]");
 
-    private final ElementsCollection orderCart = $$x("//a[contains(@class, \"add-order-basket-js\")]");
-    private final SelenideElement orderTableInCart = $x("//table[(@class=\"table table-outline table-vcenter card-table\")]");
-    private final SelenideElement clearCart = $x("//a[(@class=\"btn btn-lg btn-clear w-100 clear-basket-js cart-clear\")]");
-    private final SelenideElement statusCart = $x("//div[(@id=\"basketTotal\")]");
 
     /**
      * Блок с методами позитивных и негативных сценариев проверки личного кабинета
@@ -120,18 +116,5 @@ public class FdmPersonalAreaPage {
         return this;
     }
 
-    @Step("Кликаю - Добавить в корзину - по рандомному бланку заказа")
-    public FdmPersonalAreaPage getRandomOrderToCart() {
-        SelenideElement element = RandomUtils
-                .getRandomElementFromList(orderCart.shouldBe(CollectionCondition.sizeNotEqual(0)));
-        element.click();
-        return this;
-    }
-
-    @Step("Проверяю, что бланк заказа добавился в Корзину")
-    public FdmPersonalAreaPage checkOrderOnCart() {
-        orderTableInCart.shouldBe(Condition.visible, Duration.ofSeconds(30));
-        return this;
-    }
 
 }

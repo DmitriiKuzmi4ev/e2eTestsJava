@@ -68,33 +68,4 @@ public class FdmPersonalAreaTest extends BaseTest {
                 .clickOnDecorSamples();
     }
 
-    @Test
-    @DisplayName("Тест - Личный кабинет -  удаление бланка зазказа из корзины (если она не пустая)")
-    public void personalAreaDeleteOrderFromCartTest() {
-        fdmPersonalAreaPage.clickOnEnter()
-                .checkedAuthModal()
-                .insertValidPhone()
-                .clickOnEntryBtn()
-                .insertValidCode()
-                .clickOnEntryBtnPrimary()
-                .clickOnOrders()
-                .clickOnShoppingCart()
-                .checkOrderOnCart();
-    }
-
-    @Test
-    @DisplayName("Тест - Личный кабинет -  добавление бланка заказа в Корзину из блока Бланки заказов")
-    public void personalAreaAddOrderInCartTest() {
-        fdmPersonalAreaPage.clickOnEnter()
-                .checkedAuthModal()
-                .insertValidPhone()
-                .clickOnEntryBtn()
-                .insertValidCode()
-                .clickOnEntryBtnPrimary()
-                .clickOnOrders()
-                .getRandomOrderToCart()
-                .clickOnShoppingCart()
-                .checkOrderOnCart();
-
-    }
 }

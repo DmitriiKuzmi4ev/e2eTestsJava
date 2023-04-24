@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ui.test.fdmPesronalAreaTest.FdmPersonalAreaTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-04-24T09:44:46" hostname="KO-66-PC" time="28.787">
+  <properties/>
+  <testcase name="Тест - Личный кабинет -  переход по кнопке Оплаченные заказы в л/к" classname="ui.test.fdmPesronalAreaTest.FdmPersonalAreaTest" time="7.519"/>
+  <testcase name="Тест - Личный кабинет -  переход по кнопке Образцы декоров в л/к" classname="ui.test.fdmPesronalAreaTest.FdmPersonalAreaTest" time="7.2"/>
+  <testcase name="Тест - Личный кабинет -  переход по кнопке Корзина в л/к" classname="ui.test.fdmPesronalAreaTest.FdmPersonalAreaTest" time="8.067"/>
+  <testcase name="Тест - Личный кабинет -  переход по кнопке Заказы" classname="ui.test.fdmPesronalAreaTest.FdmPersonalAreaTest" time="5.998"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 30397
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 23362
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 2475
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 42534
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+</testsuite>
