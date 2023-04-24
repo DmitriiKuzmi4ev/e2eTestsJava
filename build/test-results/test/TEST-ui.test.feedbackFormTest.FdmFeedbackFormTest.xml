@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ui.test.feedbackFormTest.FdmFeedbackFormTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-04-21T15:43:28" hostname="KO-66-PC" time="16.064">
+<testsuite name="ui.test.feedbackFormTest.FdmFeedbackFormTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-04-24T08:52:24" hostname="KO-66-PC" time="17.84">
   <properties/>
-  <testcase name="Тест - Форма обратной связи - отправка сообщения" classname="ui.test.feedbackFormTest.FdmFeedbackFormTest" time="5.934"/>
-  <testcase name="Тест - Форма обратной связи - видимость на странице" classname="ui.test.feedbackFormTest.FdmFeedbackFormTest" time="5.082"/>
-  <testcase name="Тест - Форма обратной связи - заполнение полей" classname="ui.test.feedbackFormTest.FdmFeedbackFormTest" time="5.045"/>
+  <testcase name="Тест - Форма обратной связи - отправка сообщения" classname="ui.test.feedbackFormTest.FdmFeedbackFormTest" time="6.339"/>
+  <testcase name="Тест - Форма обратной связи - видимость на странице" classname="ui.test.feedbackFormTest.FdmFeedbackFormTest" time="5.604"/>
+  <testcase name="Тест - Форма обратной связи - заполнение полей" classname="ui.test.feedbackFormTest.FdmFeedbackFormTest" time="5.894"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 22270
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 10740
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 44234
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 11252
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 46190
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 36080
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.

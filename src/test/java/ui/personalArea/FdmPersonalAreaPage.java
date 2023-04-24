@@ -1,12 +1,15 @@
 package ui.personalArea;
 
+import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import ui.loginPage.FdmLoginPage;
+import utils.RandomUtils;
 
 import java.time.Duration;
 
+import static com.codeborne.selenide.Selenide.$$x;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class FdmPersonalAreaPage {
@@ -34,6 +37,9 @@ public class FdmPersonalAreaPage {
     private final SelenideElement shoppingCart = $x("//a[@href=\"/main/basket/\"]");
     private final SelenideElement paidOrders = $x("//a[@href=\"/orders/paid\"]");
     private final SelenideElement decorSamples = $x("//a[@href=\"/shop/sample-orders\"]");
+
+    private final ElementsCollection orderCart = $$x("//a[contains(@class, \"add-order-basket-js\")]");
+    private final SelenideElement orderTableInCart = $x("//table[(@class=\"table table-outline table-vcenter card-table\")]");
 
     /**
      * Блок с методами позитивных и негативных сценариев проверки личного кабинета
@@ -112,6 +118,18 @@ public class FdmPersonalAreaPage {
         return this;
     }
 
+    @Step("Кликаю - Добавить в корзину - по рандомному бланку заказа")
+    public FdmPersonalAreaPage getRandomOrderToCart() {
+        SelenideElement element = RandomUtils
+                .getRandomElementFromList(orderCart.shouldBe(CollectionCondition.sizeNotEqual(0)));
+        element.click();
+        return this;
+    }
 
+    @Step("Проверяю, что бланк заказа добавился в Корзину")
+    public FdmPersonalAreaPage checkOrderOnCart() {
+        orderTableInCart.shouldBe(Condition.visible, Duration.ofSeconds(30));
+        return this;
+    }
 
 }
