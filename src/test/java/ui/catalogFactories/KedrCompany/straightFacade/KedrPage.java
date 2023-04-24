@@ -4,6 +4,7 @@ import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import utils.RandomUtils;
 
 import java.time.Duration;
@@ -40,103 +41,103 @@ public class KedrPage {
     private final SelenideElement facadeWithOutEdge = $x("//a[(@href=\"/catalog/decors/simple\")]");
     private final SelenideElement facadeWithEdge = $x("//a[contains(@href, \"/catalog/decors/edge\")]");
 
-    /*Каталог*/
+    @Step("Проверяю, что кнопка Каталог активна и кликаю по ней")
     public KedrPage openCatalog() {
         catalog.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
-    /*Фабрика Кедр*/
+    @Step("Проверяю, что кнопка Кедр активна и кликаю по ней")
     public KedrPage openKedrFabric() {
         kedr.shouldBe(Condition.enabled).click();
         return this;
     }
-    /*Фасады из пластика*/
+    @Step("Захожу в раздел фасады из пластика")
     public KedrPage openPlasticFacade() {
         plastic.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         return this;
     }
-    /*Фасады ал. профиль silver*/
+    @Step("Захожу в раздел фасады Алюминевый профиль Silver")
     public KedrPage setAluminiumSilver() {
         aluminiumSilver.shouldBe(Condition.enabled).click();
         return this;
     }
-    /*Фасады ал. профиль slim*/
+    @Step("Захожу в раздел фасады Алюминевый профиль Slim")
     public KedrPage setAluminiumSlim() {
         aluminiumSlim.shouldBe(Condition.enabled).click();
         return this;
     }
-    /*Фасады ал. профиль цветной*/
+    @Step("Захожу в раздел фасады Алюминевый профиль цветной")
     public KedrPage setAluminiumColor() {
         aluminiumColor.shouldBe(Condition.enabled).click();
         return this;
     }
-    /*Фасады без окромления*/
+    @Step("Захожу в раздел фасады без окромления")
     public KedrPage setFacadeWithOutEdge() {
         facadeWithOutEdge.shouldBe(Condition.enabled).click();
         return this;
     }
-    /*Фасады с кромкой ПВХ*/
+    @Step("Захожу в раздел фасады с кромкой ПВХ")
     public KedrPage setFacadeWithEdge() {
         facadeWithEdge.shouldBe(Condition.enabled).click();
         return this;
     }
-    /*Срабатывает утильный рандомайзер из класса RandomUtils - чтобы кликнуть на рандомный декор*/
+    @Step("Кликаю на рандомный декор")
     public KedrPage setRandomDecor() {
         SelenideElement element = RandomUtils
                 .getRandomElementFromList(decorCollection.shouldBe(CollectionCondition.sizeNotEqual(0)));
         element.click();
         return this;
     }
-    /*Продолжить*/
+    @Step("Кликаю на кнопку Продолжить")
     public void continue1Click() {
         continue1.shouldBe(Condition.enabled).click();
     }
-    /*Высота*/
+    @Step("Ввожу высоту")
     public void setHeight() {
         heightArea.shouldBe(Condition.enabled).sendKeys(BASE_HEIGHT);
     }
-    /*Ширина*/
+    @Step("Ввожу ширину")
     public void setWidth() {
         widthArea.shouldBe(Condition.enabled).sendKeys(BASE_WIDTH);
     }
-    /*Срабатывает утильный рандомайзер из класса RandomUtils - чтобы кликнуть на рандомный декор кромки*/
+    @Step("Кликаю на рандомный декор кромки")
     public void setRandomEdge() {
         SelenideElement element1 = RandomUtils
                 .getRandomElementFromList(edgeCollection.shouldBe(CollectionCondition.sizeNotEqual(0)));
         element1.click();
     }
-    /*Рассчитать стоимость заказа*/
+    @Step("Кликаю по кнопке Рассчитать стоимость заказа")
     public void calculateClick() {
         calculate.scrollTo();
         calculate.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
         addToBasketBtn.scrollTo();
     }
-    /*Добавить в корзину*/
+    @Step("Проверяю, что кнопка Добавить в корзину - активна и кликаю по ней")
     public void addToBasketClick() {
         addToBasket.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
     }
-    /*Перейти в корзину*/
+    @Step("Проверяю, что кнопка Перейти в корзину - активна и кликаю по ней")
     public void goToBasketClick() {
         goToBasket.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
     }
-    /*Перейти к оформлению*/
+    @Step("Проверяю, что кнопка Перейти к оформлению - активна и кликаю по ней")
     public void goToCheckOutClick() {
         checkOutBtn.scrollTo();
         goToCheckOut.shouldBe(Condition.enabled, Duration.ofSeconds(30)).click();
     }
-    /*Выбрать оплату по QR*/
+    @Step("Кликаю по кнопке - оплатить по QR коду и проверяю, что активировался нужный Radio")
     public void qrCodeClick() {
         qrCode.click();
         qrCodeRadio.should(Condition.selected);
     }
 
-    /*Подтвердить город доставки*/
+    @Step("Кликаю по кнопке - подтвердить город доставки и проверяю, что активировался нужный чек бокс")
     public void deliveryCityClick() {
         deliveryCity.click();
         deliveryCityCheckbox.should(Condition.selected);
     }
 
-    /*Кнопка Оплатить - активна*/
+    @Step("Проверяю, что кнопка Оплатить - активна и доступна")
     public void checkedPaymentBtn() {
         paymentBtn.should(Condition.enabled);
     }
