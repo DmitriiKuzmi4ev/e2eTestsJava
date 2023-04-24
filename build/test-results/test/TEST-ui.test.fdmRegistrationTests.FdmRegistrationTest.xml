@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ui.test.fdmRegistrationTests.FdmRegistrationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-04-24T09:45:14" hostname="KO-66-PC" time="23.353">
+<testsuite name="ui.test.fdmRegistrationTests.FdmRegistrationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-04-24T14:31:29" hostname="KO-66-PC" time="22.297">
   <properties/>
-  <testcase name="Тест - Регистрация -  ввод валидных значений, заполнение всех полей" classname="ui.test.fdmRegistrationTests.FdmRegistrationTest" time="3.921"/>
-  <testcase name="Тест - Регистрация -  Ввод уже зарегестрированного номера телефона" classname="ui.test.fdmRegistrationTests.FdmRegistrationTest" time="3.445"/>
-  <testcase name="Тест - Регистрация -  пропуск обязательных полей" classname="ui.test.fdmRegistrationTests.FdmRegistrationTest" time="4.505"/>
-  <testcase name="Тест - Регистрация -  ввод не валидных значений" classname="ui.test.fdmRegistrationTests.FdmRegistrationTest" time="4.774"/>
-  <testcase name="Тест - Регистрация -  проверка ссылок на документы соглашений" classname="ui.test.fdmRegistrationTests.FdmRegistrationTest" time="3.004"/>
-  <testcase name="Тест - Регистрация -  Ввод уже зарегестрированной электронной почты" classname="ui.test.fdmRegistrationTests.FdmRegistrationTest" time="3.699"/>
+  <testcase name="Тест - Регистрация -  ввод валидных значений, заполнение всех полей" classname="ui.test.fdmRegistrationTests.FdmRegistrationTest" time="3.688"/>
+  <testcase name="Тест - Регистрация -  Ввод уже зарегестрированного номера телефона" classname="ui.test.fdmRegistrationTests.FdmRegistrationTest" time="3.593"/>
+  <testcase name="Тест - Регистрация -  пропуск обязательных полей" classname="ui.test.fdmRegistrationTests.FdmRegistrationTest" time="3.953"/>
+  <testcase name="Тест - Регистрация -  ввод не валидных значений" classname="ui.test.fdmRegistrationTests.FdmRegistrationTest" time="4.386"/>
+  <testcase name="Тест - Регистрация -  проверка ссылок на документы соглашений" classname="ui.test.fdmRegistrationTests.FdmRegistrationTest" time="3.092"/>
+  <testcase name="Тест - Регистрация -  Ввод уже зарегестрированной электронной почты" classname="ui.test.fdmRegistrationTests.FdmRegistrationTest" time="3.58"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 6516
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 9742
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 13255
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 24166
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 22897
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 27383
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 28424
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 10972
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 9358
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 13174
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 35573
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 42170
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.

@@ -11,7 +11,7 @@ public class BaseTest {
     private void init() {
         System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Red\\chromedriver.exe");
         Configuration.browserSize = "1920x1080";
-        Configuration.headless = false;
+        Configuration.headless = true;
         Configuration.holdBrowserOpen = false;
         Configuration.timeout = 50000;
         Configuration.pollingInterval = 500;
