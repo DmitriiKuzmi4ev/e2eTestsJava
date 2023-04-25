@@ -1,5 +1,6 @@
 package ui.test.fdmNavigationPageTests;
 import core.BaseTest;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -7,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import ui.navigationPage.FdmNavigationPage;
 
 @Tag("Smoke")
+@Feature("Блок навигации на сайте")
 public class FdmNavigationTest extends BaseTest {
     private FdmNavigationPage fdmNavigationPage;
     @BeforeEach

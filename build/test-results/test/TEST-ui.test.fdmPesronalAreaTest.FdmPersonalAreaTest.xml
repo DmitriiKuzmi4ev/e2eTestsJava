@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ui.test.fdmPesronalAreaTest.FdmPersonalAreaTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-04-24T14:30:55" hostname="KO-66-PC" time="33.477">
+<testsuite name="ui.test.fdmPesronalAreaTest.FdmPersonalAreaTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-04-25T07:06:05" hostname="KO-66-PC" time="27.489">
   <properties/>
-  <testcase name="Тест - Личный кабинет -  переход по кнопке Оплаченные заказы в л/к" classname="ui.test.fdmPesronalAreaTest.FdmPersonalAreaTest" time="6.89"/>
-  <testcase name="Тест - Личный кабинет -  переход по кнопке Образцы декоров в л/к" classname="ui.test.fdmPesronalAreaTest.FdmPersonalAreaTest" time="6.629"/>
-  <testcase name="Тест - Личный кабинет -  переход по кнопке Корзина в л/к" classname="ui.test.fdmPesronalAreaTest.FdmPersonalAreaTest" time="13.883"/>
-  <testcase name="Тест - Личный кабинет -  переход по кнопке Заказы" classname="ui.test.fdmPesronalAreaTest.FdmPersonalAreaTest" time="6.072"/>
+  <testcase name="Тест - Личный кабинет -  переход по кнопке Оплаченные заказы в л/к" classname="ui.test.fdmPesronalAreaTest.FdmPersonalAreaTest" time="7.157"/>
+  <testcase name="Тест - Личный кабинет -  переход по кнопке Образцы декоров в л/к" classname="ui.test.fdmPesronalAreaTest.FdmPersonalAreaTest" time="6.335"/>
+  <testcase name="Тест - Личный кабинет -  переход по кнопке Корзина в л/к" classname="ui.test.fdmPesronalAreaTest.FdmPersonalAreaTest" time="7.633"/>
+  <testcase name="Тест - Личный кабинет -  переход по кнопке Заказы" classname="ui.test.fdmPesronalAreaTest.FdmPersonalAreaTest" time="6.361"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 32051
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 4981
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 20442
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 23325
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 20205
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 15394
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 37633
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 47297
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.

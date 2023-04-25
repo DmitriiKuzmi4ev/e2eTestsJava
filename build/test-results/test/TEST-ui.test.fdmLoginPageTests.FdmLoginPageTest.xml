@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ui.test.fdmLoginPageTests.FdmLoginPageTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-04-24T14:29:33" hostname="KO-66-PC" time="20.595">
+<testsuite name="ui.test.fdmLoginPageTests.FdmLoginPageTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-04-25T07:04:43" hostname="KO-66-PC" time="18.275">
   <properties/>
-  <testcase name="Тест - Авторизация -  ввод невалидного номера телефона и кода авторизации" classname="ui.test.fdmLoginPageTests.FdmLoginPageTest" time="4.481"/>
-  <testcase name="Тест - Авторизация -  ввод неверного кода авторизации" classname="ui.test.fdmLoginPageTests.FdmLoginPageTest" time="4.872"/>
-  <testcase name="Тест - Авторизация -  выход из личного кабинета пользователя" classname="ui.test.fdmLoginPageTests.FdmLoginPageTest" time="6.207"/>
-  <testcase name="Тест - Авторизация -  ввод валидного номера телефона и кода авторизации" classname="ui.test.fdmLoginPageTests.FdmLoginPageTest" time="5.028"/>
+  <testcase name="Тест - Авторизация -  ввод невалидного номера телефона и кода авторизации" classname="ui.test.fdmLoginPageTests.FdmLoginPageTest" time="3.954"/>
+  <testcase name="Тест - Авторизация -  ввод неверного кода авторизации" classname="ui.test.fdmLoginPageTests.FdmLoginPageTest" time="4.547"/>
+  <testcase name="Тест - Авторизация -  выход из личного кабинета пользователя" classname="ui.test.fdmLoginPageTests.FdmLoginPageTest" time="5.268"/>
+  <testcase name="Тест - Авторизация -  ввод валидного номера телефона и кода авторизации" classname="ui.test.fdmLoginPageTests.FdmLoginPageTest" time="4.5"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 4568
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 25400
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 12809
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 48593
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 22039
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 46175
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 25523
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 24849
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ui.test.fdmPesronalAreaTest.fdmRegistrationTests.FdmRegistrationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-04-25T07:06:32" hostname="KO-66-PC" time="22.725">
+  <properties/>
+  <testcase name="Тест - Регистрация -  ввод валидных значений, заполнение всех полей" classname="ui.test.fdmPesronalAreaTest.fdmRegistrationTests.FdmRegistrationTest" time="3.762"/>
+  <testcase name="Тест - Регистрация -  Ввод уже зарегестрированного номера телефона" classname="ui.test.fdmPesronalAreaTest.fdmRegistrationTests.FdmRegistrationTest" time="3.653"/>
+  <testcase name="Тест - Регистрация -  пропуск обязательных полей" classname="ui.test.fdmPesronalAreaTest.fdmRegistrationTests.FdmRegistrationTest" time="4.244"/>
+  <testcase name="Тест - Регистрация -  ввод не валидных значений" classname="ui.test.fdmPesronalAreaTest.fdmRegistrationTests.FdmRegistrationTest" time="4.475"/>
+  <testcase name="Тест - Регистрация -  проверка ссылок на документы соглашений" classname="ui.test.fdmPesronalAreaTest.fdmRegistrationTests.FdmRegistrationTest" time="3.072"/>
+  <testcase name="Тест - Регистрация -  Ввод уже зарегестрированной электронной почты" classname="ui.test.fdmPesronalAreaTest.fdmRegistrationTests.FdmRegistrationTest" time="3.513"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 12654
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 3428
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 31416
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 35231
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 11650
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 30204
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+</testsuite>

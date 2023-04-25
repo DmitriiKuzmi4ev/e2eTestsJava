@@ -28,7 +28,7 @@ public class KedrPage {
     private final SelenideElement addToBasketBtn = $x("//a[contains(@data-href, \"/order/add-to-basket/\")]");
     private final SelenideElement checkOutBtn = $x("//a[contains(@data-type, \"go-to-checkout\")]");
     private final SelenideElement addToBasket = $x("//a[contains(@class, \"add-to-basket-js\")]");
-    private final SelenideElement goToBasket = $x("//a[@class='basket-header-link']");
+    private final SelenideElement goToBasket = $x("//div[(@class=\"content-inside\")]//ancestor::a[@href=\"/main/basket/\"]");
     private final SelenideElement goToCheckOut = $x("//a[contains(@class, \"btn btn-lg btn-success w-100 mb-4\")]");
     private final SelenideElement aluminiumSlim = $x("//a[@data-slug=\"plast-Al-color-slim\"]");
 

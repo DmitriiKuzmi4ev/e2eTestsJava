@@ -25,26 +25,22 @@ public class DemfaPage {
     private final ElementsCollection decorCollection = $$x("//div[contains(@class, \"col-md-6 col-lg-3 mb-4 decor-item\")]");
     private final SelenideElement continue1 = $x("//*[@id=\"exampleModal\"]/div/form/div/div[3]/button[2]");
     private final SelenideElement continue2 = $x("//button[@class=\"btn btn-primary\"]");
-    private final ElementsCollection edgeCollection = $$x("//div[contains(@class, \"d-flex mb-2 align-items-center edge-decor-item-parent\")]");
     private final SelenideElement heightArea = $x("//input[contains(@class, \"detail-height-input form-control\")]");
     private final SelenideElement widthArea = $x("//input[contains(@class, \"detail-width-input form-control\")]");
     private final ElementsCollection millingCollection = $$x("//a[contains(@class, \"card d-block  m-0 milling-item-button\")]");
     private final SelenideElement calculate = $x("//button[contains(@class, \"btn btn-success mb-4\")]");
     private final SelenideElement addToBasketBtn = $x("//a[contains(@data-href, \"/order/add-to-basket/\")]");
-    private final SelenideElement checkOutBtn = $x("//a[contains(@data-type, \"go-to-checkout\")]");
+    private final SelenideElement checkOutBtn = $x("//body[(@class=\"body-page personal-area\")]//ancestor::a[(@data-type=\"go-to-checkout\")]");
     private final SelenideElement addToBasket = $x("//a[contains(@class, \"add-to-basket-js\")]");
     private final SelenideElement goToBasket = $x("//a[@class='basket-header-link']");
     private final SelenideElement goToCheckOut = $x("//a[contains(@class, \"btn btn-lg btn-success w-100 mb-4\")]");
-    private final SelenideElement aluminiumSlim = $x("//a[@data-slug=\"plast-Al-color-slim\"]");
 
     private final SelenideElement qrCode = $x("//input[(@value=\"raiff\")]//ancestor::label");
     private final SelenideElement qrCodeRadio = $x("//input[(@value=\"raiff\")]");
     private final SelenideElement deliveryCity = $x("//label[(@for=\"deliveryCityCheckbox\")]");
     private final SelenideElement deliveryCityCheckbox = $x("//input[(@id=\"deliveryCityCheckbox\")]");
     private final SelenideElement paymentBtn = $x("//button[contains(@class, \" btn-success w-100\")]");
-    private final SelenideElement aluminiumSilver = $x("//a[@data-slug=\"plastik-AL-silver\"]");
-    private final SelenideElement facadeWithOutEdge = $x("//a[(@href=\"/catalog/decors/simple\")]");
-    private final SelenideElement facadeWithEdge = $x("//a[contains(@href, \"/catalog/decors/edge\")]");
+
 
     @Step("Проверяю, что кнопка Каталог активна и кликаю по ней")
     public DemfaPage openCatalog() {

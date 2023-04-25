@@ -2,6 +2,7 @@ package ui.test.factories.demfa;
 
 
 import core.BaseTest;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -10,6 +11,7 @@ import ui.catalogFactories.DemfaCompany.DemfaPage;
 import ui.loginPage.FdmLoginPage;
 
 @Tag("Smoke")
+@Feature("Оформление заказа")
 public class DemfaEmalTest extends BaseTest {
     private DemfaPage demfaPage;
     @BeforeEach

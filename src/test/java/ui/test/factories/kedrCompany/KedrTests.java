@@ -1,6 +1,7 @@
 package ui.test.factories.kedrCompany;
 
 import core.BaseTest;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -9,6 +10,7 @@ import ui.catalogFactories.KedrCompany.straightFacade.KedrPage;
 import ui.loginPage.FdmLoginPage;
 
 @Tag("Smoke")
+@Feature("Оформление заказа")
 public class KedrTests extends BaseTest {
     private KedrPage kedrPage;
     @BeforeEach

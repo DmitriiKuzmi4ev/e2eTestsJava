@@ -1,6 +1,7 @@
 package ui.test.feedbackFormTest;
 
 import core.BaseTest;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -8,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import ui.feedbackFormPage.FdmFeedbackFormPage;
 
 @Tag("Smoke")
+@Feature("Блок обратной связи")
 public class FdmFeedbackFormTest extends BaseTest {
     private FdmFeedbackFormPage fdmFeedbackFormPage;
     @BeforeEach

@@ -1,6 +1,7 @@
 package ui.test.fdmLoginPageTests;
 
 import core.BaseTest;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -8,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import ui.loginPage.FdmLoginPage;
 
 @Tag("Smoke")
+@Feature("Блок авторизации пользователя")
 public class FdmLoginPageTest extends BaseTest {
     private FdmLoginPage fdmMainPage;
     @BeforeEach

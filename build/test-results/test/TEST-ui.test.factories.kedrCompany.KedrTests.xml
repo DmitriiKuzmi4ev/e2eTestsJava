@@ -1,37 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ui.test.factories.kedrCompany.KedrTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-04-24T14:25:34" hostname="KO-66-PC" time="238.896">
+<testsuite name="ui.test.factories.kedrCompany.KedrTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-04-25T07:01:51" hostname="KO-66-PC" time="171.833">
   <properties/>
-  <testcase name="Тест - Кедр - заказ Фасады алюминиевый профиль - цветной" classname="ui.test.factories.kedrCompany.KedrTests" time="56.883"/>
-  <testcase name="Тест - Кедр - заказ Фасады алюминиевый профиль - silver" classname="ui.test.factories.kedrCompany.KedrTests" time="50.659"/>
-  <testcase name="Тест - Кедр - заказ Фасады без окромления" classname="ui.test.factories.kedrCompany.KedrTests" time="25.722"/>
-  <testcase name="Тест - Кедр - заказ Фасады алюминиевый профиль - slim" classname="ui.test.factories.kedrCompany.KedrTests" time="31.993"/>
-  <testcase name="Тест - Кедр - заказ Фасады с кромкой ПВХ" classname="ui.test.factories.kedrCompany.KedrTests" time="73.631"/>
+  <testcase name="Тест - Кедр - заказ Фасады алюминиевый профиль - цветной" classname="ui.test.factories.kedrCompany.KedrTests" time="53.445"/>
+  <testcase name="Тест - Кедр - заказ Фасады алюминиевый профиль - silver" classname="ui.test.factories.kedrCompany.KedrTests" time="49.268"/>
+  <testcase name="Тест - Кедр - заказ Фасады без окромления" classname="ui.test.factories.kedrCompany.KedrTests" time="19.427"/>
+  <testcase name="Тест - Кедр - заказ Фасады алюминиевый профиль - slim" classname="ui.test.factories.kedrCompany.KedrTests" time="24.029"/>
+  <testcase name="Тест - Кедр - заказ Фасады с кромкой ПВХ" classname="ui.test.factories.kedrCompany.KedrTests" time="25.654"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 27229
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 31984
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1682346380.022][SEVERE]: Timed out receiving message from renderer: 30.000
-[1682346380.022][SEVERE]: Timed out receiving message from renderer: 30.000
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 41738
+[1682406154.663][SEVERE]: Timed out receiving message from renderer: 30.000
+[1682406154.664][SEVERE]: Timed out receiving message from renderer: 30.000
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 15628
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1682346431.263][SEVERE]: Timed out receiving message from renderer: 30.000
-[1682346431.263][SEVERE]: Timed out receiving message from renderer: 30.000
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 47399
+[1682406205.580][SEVERE]: Timed out receiving message from renderer: 30.000
+[1682406205.581][SEVERE]: Timed out receiving message from renderer: 30.000
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 22067
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 28158
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 13872
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 21957
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 26093
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1682346544.933][SEVERE]: Timed out receiving message from renderer: 30.000
-[1682346544.934][SEVERE]: Timed out receiving message from renderer: 30.000
 ]]></system-err>
 </testsuite>

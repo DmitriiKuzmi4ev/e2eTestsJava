@@ -1,6 +1,7 @@
 package ui.loginPage;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
@@ -25,7 +26,7 @@ public class FdmLoginPage {
      */
 
     private final SelenideElement applyCity = $x("//*[@id=\"closeSelectCityModal\"]");
-    private final SelenideElement enter = $x("//body[(@class=\"body-page\")]//ancestor::a[(@data-target=\"#auth-modal\")]");
+    private final SelenideElement enter = $x("//body[(@class=\"body-page\")]//ancestor::a[(@data-link=\"/personal/login_modal\")]");
     private final SelenideElement authModal = $x("//div[(@id=\"auth-modal\")]//ancestor::div[(@class=\"modal-body form-container\")]");
     private final SelenideElement phoneInput = $x("//input[(@id=\"phoneInput\")]");
     private final SelenideElement entryBtn = $x("//div[(@class=\"col center\")]//ancestor::button[(@type=\"submit\")]");
@@ -55,7 +56,8 @@ public class FdmLoginPage {
 
     @Step("Кликаю на кнопку Вход на главной странице")
     public FdmLoginPage clickOnEnter() {
-        enter.shouldBe(Condition.exist, Duration.ofSeconds(30)).click();
+        Selenide.refresh();
+        enter.shouldBe(Condition.visible, Duration.ofSeconds(30)).click();
         return this;
     }
 
