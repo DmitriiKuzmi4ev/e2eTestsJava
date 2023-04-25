@@ -2,7 +2,6 @@ package ui.catalogFactories.DemfaCompany;
 
 import com.codeborne.selenide.*;
 import io.qameta.allure.Step;
-import ui.catalogFactories.KedrCompany.straightFacade.KedrPage;
 import utils.RandomUtils;
 
 import java.time.Duration;
