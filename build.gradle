@@ -26,6 +26,8 @@ dependencies {
     implementation 'io.qameta.allure:allure-selenide:2.19.0'
     implementation 'io.qameta.allure:allure-rest-assured:2.19.0'
     implementation 'org.slf4j:slf4j-simple:1.7.32'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+    annotationProcessor 'org.projectlombok:lombok:1.18.4'
 
 
 }
