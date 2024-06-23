@@ -30,7 +30,7 @@ dependencies {
 
 }
 
-def uiTest = tasks.register("apiTest", Test) {
+def apiTest = tasks.register("apiTest", Test) {
     useJUnitPlatform {
         includeTags "Api"
     }
