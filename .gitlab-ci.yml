@@ -1,58 +1,53 @@
+#Образ для градл
 image: gradle:alpine
+
+#image: maven:3.8-openjdk-11
 
 default:
   tags:
     - shelllocal
 
-
 stages:
   - tests
   - allure
 
-
-SMOKE TESTS:
+API Test:
   stage: tests
   allow_failure: true
   script:
-    - echo "Запуск тестов"
-    - gradle clean test
+    - ./gradlew -x test apiTest
   artifacts:
     when: always
     paths:
-     - build/allure-results
+      - build/allure-results
 
+UI Test:
+  stage: tests
+  allow_failure: true
+  script:
+    - ./gradlew -x test uiTests
+  artifacts:
+    when: always
+    paths:
+      - build/allure-results
 
-ALLURE:
+Allure report:
   stage: allure
   script:
-    - gradle allureReport
+    - ./gradlew allureReport
+    - echo "Allure report live here - https://${CI_PROJECT_NAMESPACE}.${CI_PAGES_DOMAIN}/-/${CI_PROJECT_NAME}/-/jobs/${CI_JOB_ID}/artifacts/build/reports/allure-report/allureReport/index.html"
   artifacts:
     when: always
     paths:
       - build/reports/allure-report/allureReport/*
 
 
-#image: docker:latest
-#
-#stages:
-#  - test
-#  - report
-#test:
-#  services:
-#    - docker:dind
+#Integration tests with Allure:
+#  stage: test
 #  script:
-#    - echo "Запуск тестов"
-#    - docker run --rm -v $PWD:/project -w /project gradle:latest gradle clean test
-#  artifacts:
-#    when: always
-#    paths:
-#      - build/allure-results
-#
-#report:
-#  script:
-#    - echo "Формирование отчета"
-#    - docker run --rm -v $PWD:/project -w /project qameta/allure-commandline gradle allureReport
-#    - echo "Allure report is here - http://localhost:63342/SelenideTestingNewGradle/build/reports/allure-report/allureReport/index.html?_ijt=otfao76sodnuj65itka2sema70&_ij_reload=RELOAD_ON_SAVE"
+#    - ./gradlew clean test
+#  after_script:
+#    - ./gradlew allureReport
 #  artifacts:
 #    when: always
 #    paths:
