@@ -1,6 +1,5 @@
 package ui.test;
 
-import core.BaseTest;
 import io.qameta.allure.Feature;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeAll;
@@ -12,7 +11,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 @Tag("Api")
 @Feature("Тесты ci/cd")
-public class ApiTests extends BaseTest {
+public class ApiTests {
     @BeforeAll
     public static void setBaseUrl(){
         RestAssured.baseURI = "https://api.spacexdata.com/v3";
